@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Карточка товара — Силикагелевый наполнитель Найси Премиум — Производитель ООО «Экософт»</title>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#00675c",
+            "primary-container": "#028275",
+            "on-primary": "#ffffff",
+            "on-primary-container": "#f4fffc",
+            "primary-fixed": "#8df5e5",
+            "secondary": "#00677e",
+            "secondary-container": "#83defd",
+            "on-secondary": "#ffffff",
+            "on-secondary-container": "#006076",
+            "tertiary": "#96412b",
+            "tertiary-container": "#b55940",
+            "on-tertiary": "#ffffff",
+            "surface": "#eefcff",
+            "surface-bright": "#eefcff",
+            "surface-container-lowest": "#ffffff",
+            "surface-container-low": "#e2f8fc",
+            "surface-container": "#dcf2f6",
+            "surface-container-high": "#d7ecf0",
+            "surface-container-highest": "#d1e6ea",
+            "on-surface": "#0a1e22",
+            "on-surface-variant": "#3e4947",
+            "outline": "#6e7a77",
+            "outline-variant": "#bdc9c6",
+            "error": "#ba1a1a",
+            "badge-odor-control": "#028275",
+            "badge-moisture": "#007F9B",
+            "badge-dust-free": "#3D5A80",
+            "badge-natural": "#4F772D",
+            "warm-amber": "#F4A261",
+            "mint-surface": "#F2F9F8",
+            "mint-subtle": "#C8E5E1",
+            "pure-white": "#FFFFFF",
+            "slate-dark": "#162E33"
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body class="bg-surface text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container">
+
+  <!-- Shared Stitch Header -->
+  <div id="site-header"></div>
+
+  <main class="max-w-[1320px] mx-auto px-4 md:px-6 lg:px-8 pt-8 pb-14">
+    <!-- 2. Main Product Hero Grid (Left: Gallery, Right: Configuration & Conversion) -->
+    <section class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
+      <!-- Left Column: Media Gallery (6 cols) -->
+      <div class="lg:col-span-6 flex flex-col gap-4 lg:sticky lg:top-24">
+        <!-- Main Image Container -->
+        <div class="relative w-full aspect-square bg-gradient-to-b from-[#eaf6f2] via-[#f7fcfb] to-[#e2f3ee] rounded-3xl p-8 flex items-center justify-center border border-mint-subtle/70 shadow-[0_8px_28px_rgba(2,130,117,0.06)] overflow-hidden group">
+          <!-- Top-Left Badges -->
+          <div class="absolute top-5 left-5 z-10 flex flex-col gap-2">
+            <span id="pd-badge" class="px-3.5 py-1 rounded-full bg-badge-odor-control text-pure-white text-[12px] font-bold tracking-wide shadow-sm">
+              Высший сорт
+            </span>
+            <span class="px-3.5 py-1 rounded-full bg-mint-subtle text-primary text-[12px] font-bold">
+              99.9% Без пыли • ГОСТ 3956-76
+            </span>
+          </div>
+          <!-- Top-Right Zoom / Eco Icon -->
+          <div class="absolute top-5 right-5 z-10">
+            <div class="w-10 h-10 rounded-full bg-pure-white/90 shadow-2xs flex items-center justify-center text-primary" title="Лабораторный контроль качества ООО «Экософт»">
+              <span class="material-symbols-outlined text-[20px]">verified</span>
+            </div>
+          </div>
+
+          <!-- Primary Product Image -->
+          <img id="pd-main-img" alt="Наполнитель Экософт" class="w-4/5 h-4/5 object-contain mix-blend-multiply drop-shadow-[0_12px_22px_rgba(0,80,70,0.18)] transition-transform duration-500 group-hover:scale-105" src="image/brand_card_naisy.jpg"/>
+
+          <!-- Bottom Granule Size Pill -->
+          <div class="absolute bottom-5 left-5 right-5 flex items-center justify-between bg-surface/90 backdrop-blur-md px-4 py-2.5 rounded-xl">
+            <div class="flex items-center gap-2">
+              <span class="material-symbols-outlined text-primary text-[20px]">grain</span>
+              <span id="pd-subtitle-pill" class="text-[12px] font-semibold text-on-surface">Двухкомпонентный сорбент (не прилипает к лапам)</span>
+            </div>
+            <span class="text-[12px] text-secondary font-bold">Производство Люберцы</span>
+          </div>
+        </div>
+
+        <!-- Thumbnail Strip (3 items) -->
+        <div id="pd-thumbs" class="grid grid-cols-3 gap-3"></div>
+      </div>
+
+      <!-- Right Column: Product Configuration & Purchase Hub (6 cols) -->
+      <div class="lg:col-span-6 flex flex-col gap-6">
+        <!-- Brand & Rating Row -->
+        <div class="flex flex-wrap items-center justify-between gap-2">
+          <div class="flex items-center gap-2">
+            <span id="pd-brand-chip" class="px-3 py-1 rounded-full bg-surface-container text-primary text-[12px] font-bold">Бренд: Найси (Производитель «Экософт»)</span>
+            <span id="pd-sku" class="text-[12px] text-outline">Арт: ECO-NP-045</span>
+          </div>
+          <div class="flex items-center gap-1.5">
+            <div class="flex items-center text-warm-amber">
+              <span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1">star</span>
+              <span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1">star</span>
+              <span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1">star</span>
+              <span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1">star</span>
+              <span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1">star</span>
+            </div>
+            <span id="pd-rating" class="text-[13px] font-bold text-on-surface">4.9</span>
+            <a id="pd-reviews-count" class="text-[12px] text-secondary underline hover:text-primary" href="#reviews">(315 отзывов)</a>
+          </div>
+        </div>
+
+        <!-- Product Title & Short Lead -->
+        <div>
+          <h1 id="pd-title" class="text-[28px] md:text-[34px] font-extrabold text-on-surface leading-[1.18] tracking-tight mb-2">
+            Силикагелевый наполнитель «Найси Премиум» 4,5 л
+          </h1>
+          <p id="pd-desc" class="text-[15px] text-on-surface-variant leading-relaxed">
+            Высокотехнологичный двухкомпонентный сорбент от производителя ООО «Экософт». Мгновенно поглощает влагу и блокирует молекулы аммиака.
+          </p>
+        </div>
+
+        <!-- Volume / Related Pack Selector (Stitch Interactive Block) -->
+        <div class="bg-pure-white p-5 rounded-xl shadow-[0_4px_20px_rgba(2,130,117,0.05)] flex flex-col gap-3">
+          <div class="flex items-center justify-between">
+            <span class="text-[14px] text-on-surface font-bold">Выберите объём или фасовку серии:</span>
+            <a href="catalog.html" class="text-[12px] text-primary font-semibold hover:underline">Все 30 фасовок →</a>
+          </div>
+          <div id="pd-volume-variants" class="grid grid-cols-2 sm:grid-cols-4 gap-2.5"></div>
+        </div>
+
+        <!-- Price, Stock & Primary Action Cluster -->
+        <div class="bg-pure-white p-6 rounded-xl shadow-[0_8px_28px_rgba(2,130,117,0.06)] flex flex-col gap-5">
+          <div class="flex flex-wrap items-end justify-between gap-4">
+            <div>
+              <div class="flex items-center gap-3">
+                <span id="pd-price" class="text-[34px] font-extrabold text-on-surface leading-none">295 ₽</span>
+                <span id="pd-old-price" class="text-[16px] text-outline line-through">350 ₽</span>
+                <span class="px-2.5 py-0.5 rounded-full bg-tertiary-container text-on-tertiary text-[11px] font-bold">Цена от производителя</span>
+              </div>
+              <p id="pd-per-liter" class="text-[12px] text-outline mt-1.5">Цена от производителя без посредников • В наличии на складе в Люберцах</p>
+            </div>
+            <div class="flex items-center gap-1.5 text-badge-odor-control bg-mint-surface px-3 py-1.5 rounded-full">
+              <span class="w-2 h-2 rounded-full bg-badge-odor-control animate-pulse"></span>
+              <span class="text-[12px] font-bold">В наличии (более 500 уп.)</span>
+            </div>
+          </div>
+
+          <!-- Quantity + Add to Cart + 1-Click Buy -->
+          <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
+            <!-- Quantity Stepper -->
+            <div class="flex items-center justify-between bg-surface-container-low rounded-full px-3 py-2 sm:w-36 shrink-0">
+              <button id="pd-qty-minus" class="w-9 h-9 rounded-full bg-pure-white text-on-surface hover:bg-primary hover:text-on-primary transition-colors flex items-center justify-center font-bold" type="button">−</button>
+              <span id="pd-qty-val" class="text-[16px] font-extrabold text-on-surface px-2">1</span>
+              <button id="pd-qty-plus" class="w-9 h-9 rounded-full bg-pure-white text-on-surface hover:bg-primary hover:text-on-primary transition-colors flex items-center justify-center font-bold" type="button">+</button>
+            </div>
+
+            <!-- Primary CTA: Add to Cart -->
+            <button id="pd-add-btn" class="flex-1 py-3.5 px-6 rounded-full bg-primary hover:bg-primary-container text-on-primary font-bold text-[15px] shadow-md transition-all flex items-center justify-center gap-2" type="button">
+              <span class="material-symbols-outlined text-[20px]">shopping_bag</span>
+              <span>Добавить в корзину</span>
+            </button>
+
+            <!-- Secondary CTA: 1-Click Buy without registration -->
+            <button id="pd-quick-btn" class="py-3.5 px-5 rounded-full bg-mint-surface hover:bg-mint-subtle text-primary font-bold text-[14px] transition-colors shrink-0" type="button">
+              Купить в 1 клик
+            </button>
+          </div>
+
+          <!-- B2B Wholesale Notice inside Buy Box -->
+          <div class="pt-3 border-t border-outline-variant/25 flex flex-col sm:flex-row sm:items-center justify-between gap-2 text-[12px]">
+            <div class="flex items-center gap-2 text-on-surface-variant">
+              <span class="material-symbols-outlined text-secondary text-[18px]">local_shipping</span>
+              <span>Заказываете для питомника, магазина или на паллеты?</span>
+            </div>
+            <a class="text-primary font-bold hover:underline flex items-center gap-1" href="b2b.html">
+              <span>Рассчитать оптовую скидку до 35%</span>
+              <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- 3. Interactive Pack Lifespan Calculator Widget (Stitch Screen 3) -->
+        <div class="bg-mint-surface p-5 rounded-xl flex flex-col gap-3 border border-mint-subtle">
+          <div class="flex items-center justify-between">
+            <div class="flex items-center gap-2">
+              <span class="material-symbols-outlined text-primary text-[22px]">calculate</span>
+              <h3 class="text-[15px] font-bold text-on-surface">Калькулятор расхода выбранной упаковки</h3>
+            </div>
+            <span id="calc-pack-label" class="text-[12px] text-primary font-bold">На сколько хватит пачки?</span>
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 items-center">
+            <div class="flex flex-col gap-1.5">
+              <span class="text-[12px] text-on-surface-variant">Количество кошек в доме:</span>
+              <div class="flex items-center gap-2" id="pd-cat-calc-btns">
+                <button data-cats="1" class="w-10 h-10 rounded-lg bg-primary text-on-primary font-bold text-[13px] shadow-xs" type="button">1</button>
+                <button data-cats="2" class="w-10 h-10 rounded-lg bg-pure-white text-on-surface hover:bg-surface-container font-bold text-[13px]" type="button">2</button>
+                <button data-cats="3" class="w-10 h-10 rounded-lg bg-pure-white text-on-surface hover:bg-surface-container font-bold text-[13px]" type="button">3</button>
+                <button data-cats="5" class="px-3 h-10 rounded-lg bg-pure-white text-on-surface hover:bg-surface-container font-bold text-[12px]" type="button">Питомник (5+)</button>
+              </div>
+            </div>
+            <div class="bg-pure-white p-3.5 rounded-lg flex items-center justify-between">
+              <div>
+                <div class="text-[11px] text-outline">Одной упаковки хватит на:</div>
+                <div id="calc-days-result" class="text-[20px] font-extrabold text-primary">~ 30 дней</div>
+              </div>
+              <div class="text-right">
+                <div class="text-[11px] text-outline">Стоимость в день:</div>
+                <div id="calc-day-cost" class="text-[14px] font-bold text-on-surface">9.8 ₽ / сутки</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. Key Feature Badges (4-Grid Stitch Screen 3) -->
+        <div class="grid grid-cols-2 gap-3">
+          <div class="bg-pure-white p-3.5 rounded-xl flex items-start gap-3">
+            <div class="w-9 h-9 rounded-lg bg-mint-surface text-badge-odor-control flex items-center justify-center shrink-0">
+              <span class="material-symbols-outlined text-[20px]">shield_With_heart</span>
+            </div>
+            <div>
+              <div class="text-[13px] font-bold text-on-surface">Запирает запах на 100%</div>
+              <p class="text-[12px] text-on-surface-variant leading-snug">Двухкомпонентная пористая структура удерживает молекулы аммиака внутри гранул.</p>
+            </div>
+          </div>
+          <div class="bg-pure-white p-3.5 rounded-xl flex items-start gap-3">
+            <div class="w-9 h-9 rounded-lg bg-mint-surface text-badge-moisture flex items-center justify-center shrink-0">
+              <span class="material-symbols-outlined text-[20px]">water_drop</span>
+            </div>
+            <div>
+              <div class="text-[13px] font-bold text-on-surface">Мгновенная сорбция</div>
+              <p class="text-[12px] text-on-surface-variant leading-snug">Поверхность гранул остаётся сухой и чистой уже через 3 секунды.</p>
+            </div>
+          </div>
+          <div class="bg-pure-white p-3.5 rounded-xl flex items-start gap-3">
+            <div class="w-9 h-9 rounded-lg bg-mint-surface text-badge-dust-free flex items-center justify-center shrink-0">
+              <span class="material-symbols-outlined text-[20px]">air</span>
+            </div>
+            <div>
+              <div class="text-[13px] font-bold text-on-surface">Обеспылено на производстве</div>
+              <p class="text-[12px] text-on-surface-variant leading-snug">Безопасно для кошек и хозяев, склонных к респираторной аллергии.</p>
+            </div>
+          </div>
+          <div class="bg-pure-white p-3.5 rounded-xl flex items-start gap-3">
+            <div class="w-9 h-9 rounded-lg bg-mint-surface text-badge-natural flex items-center justify-center shrink-0">
+              <span class="material-symbols-outlined text-[20px]">pets</span>
+            </div>
+            <div>
+              <div class="text-[13px] font-bold text-on-surface">Чистые лапки вокруг лотка</div>
+              <p class="text-[12px] text-on-surface-variant leading-snug">Выверенная фракция не застревает в подушечках и не разносится по дому.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Detailed Technical Specifications & Tabs Section (Stitch Screen 3) -->
+    <section class="mt-14 bg-pure-white rounded-2xl p-6 md:p-10 shadow-[0_8px_28px_rgba(2,130,117,0.06)]">
+      <!-- Tabs Header -->
+      <div class="flex flex-wrap items-center gap-2 pb-6 mb-6 border-b border-outline-variant/25" id="pd-tabs-nav">
+        <button data-tab="desc" class="px-5 py-2.5 rounded-full bg-primary text-on-primary font-bold text-[14px]" type="button">
+          Описание и технология
+        </button>
+        <button data-tab="howto" class="px-5 py-2.5 rounded-full bg-mint-surface text-on-surface hover:bg-mint-subtle font-semibold text-[14px] transition-colors" type="button">
+          Инструкция по применению
+        </button>
+        <button data-tab="certs" class="px-5 py-2.5 rounded-full bg-mint-surface text-on-surface hover:bg-mint-subtle font-semibold text-[14px] transition-colors" type="button">
+          Сертификаты и ГОСТ 3956-76
+        </button>
+      </div>
+
+      <!-- Tab 1: Description & Specs -->
+      <div id="pd-tab-desc" class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+        <div class="lg:col-span-7 flex flex-col gap-5">
+          <h2 id="pd-tech-heading" class="text-[22px] font-extrabold text-on-surface">
+            Почему двухкомпонентные наполнители производителя «Экософт» работают эффективнее обычных?
+          </h2>
+          <p id="pd-full-desc" class="text-[15px] text-on-surface-variant leading-relaxed"></p>
+
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-1">
+            <div class="bg-mint-surface p-4 rounded-xl">
+              <div class="text-primary font-extrabold text-[22px] mb-1">SiO₂ 99%</div>
+              <div class="text-[13px] font-bold text-on-surface">Природная чистота</div>
+              <p class="text-[12px] text-on-surface-variant mt-1">Кремнезём и природные цеолиты без токсичных отдушек.</p>
+            </div>
+            <div class="bg-mint-surface p-4 rounded-xl">
+              <div class="text-secondary font-extrabold text-[22px] mb-1">2 сорбента</div>
+              <div class="text-[13px] font-bold text-on-surface">Двойное действие</div>
+              <p class="text-[12px] text-on-surface-variant mt-1">Крупные поры втягивают влагу, мелкие — блокируют запах.</p>
+            </div>
+            <div class="bg-mint-surface p-4 rounded-xl">
+              <div class="text-badge-natural font-extrabold text-[22px] mb-1">с 1998 г.</div>
+              <div class="text-[13px] font-bold text-on-surface">ИГД им. Скочинского</div>
+              <p class="text-[12px] text-on-surface-variant mt-1">Строгий лабораторный контроль каждой партии в Люберцах.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Technical Specification Table -->
+        <div class="lg:col-span-5 bg-surface-container-low p-6 rounded-xl flex flex-col gap-3">
+          <h3 class="text-[17px] font-bold text-on-surface mb-1">Паспорт характеристик товара</h3>
+          <div id="pd-specs-list" class="flex flex-col gap-2.5 text-[13px]"></div>
+        </div>
+      </div>
+
+      <!-- Tab 2: How-To Instruction -->
+      <div id="pd-tab-howto" class="hidden grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="bg-mint-surface p-6 rounded-xl">
+          <div class="w-10 h-10 rounded-full bg-primary text-pure-white font-bold flex items-center justify-center mb-3">1</div>
+          <h4 class="font-bold text-[16px] text-on-surface mb-1">Засыпка сухим слоем 3–5 см</h4>
+          <p class="text-[13px] text-on-surface-variant">Насыпьте наполнитель в чистый и сухой лоток слоем от 3 до 5 см. Для силикагеля насыпайте гранулы ближе ко дну лотка.</p>
+        </div>
+        <div class="bg-mint-surface p-6 rounded-xl">
+          <div class="w-10 h-10 rounded-full bg-primary text-pure-white font-bold flex items-center justify-center mb-3">2</div>
+          <h4 class="font-bold text-[16px] text-on-surface mb-1">Регулярный уход за лотком</h4>
+          <p class="text-[13px] text-on-surface-variant">Ежедневно удаляйте твёрдые отходы (или образовавшиеся комочки) перфорированным совком и перемешивайте кристаллы силикагеля.</p>
+        </div>
+        <div class="bg-mint-surface p-6 rounded-xl">
+          <div class="w-10 h-10 rounded-full bg-primary text-pure-white font-bold flex items-center justify-center mb-3">3</div>
+          <h4 class="font-bold text-[16px] text-on-surface mb-1">Полная замена и утилизация</h4>
+          <p class="text-[13px] text-on-surface-variant">Древесные пеллеты «Мурзик Лесной» можно смывать в унитаз малыми порциями. Силикагелевые и минеральные наполнители утилизируются с бытовыми отходами.</p>
+        </div>
+      </div>
+
+      <!-- Tab 3: Certificates -->
+      <div id="pd-tab-certs" class="hidden grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="bg-mint-surface p-6 rounded-xl flex items-start gap-4">
+          <span class="material-symbols-outlined text-primary text-[36px]">verified_user</span>
+          <div>
+            <h4 class="font-bold text-[16px] text-on-surface">Соответствие ГОСТ 3956-76 и ТУ ООО «Экософт»</h4>
+            <p class="text-[13px] text-on-surface-variant mt-1">Каждая партия проходит входной и выходной лабораторный контроль на влагоёмкость, механическую прочность гранул и массовую долю пыли. Предоставляем полный комплект документов для ИП и ООО.</p>
+          </div>
+        </div>
+        <div class="bg-mint-surface p-6 rounded-xl flex items-start gap-4">
+          <span class="material-symbols-outlined text-warm-amber text-[36px]">emoji_events</span>
+          <div>
+            <h4 class="font-bold text-[16px] text-on-surface">Победитель независимой экспертизы 1-го канала ТВ</h4>
+            <p class="text-[13px] text-on-surface-variant mt-1">Продукция производителя «Экософт» (ТМ «Мурзик-лесной») заняла 1-е место по качеству в независимом конкурсе на Первом канале телевидения.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Cross-Sell / Alternative Packaging Section -->
+    <section class="mt-14">
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-6">
+        <div>
+          <span class="text-[12px] text-primary font-bold uppercase tracking-wider">Прямые поставки от производителя «Экософт»</span>
+          <h2 class="text-[26px] font-extrabold text-on-surface mt-1">С этим товаром часто заказывают</h2>
+        </div>
+        <a class="text-primary font-bold text-[14px] hover:underline flex items-center gap-1" href="catalog.html">
+          <span>Смотреть весь каталог (30 товаров)</span>
+          <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+        </a>
+      </div>
+      <div id="pd-cross-sell" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5"></div>
+    </section>
+
+    <!-- 7. Customer Reviews & Rating Breakdown (Stitch Screen 3) -->
+    <section class="mt-14 bg-pure-white rounded-2xl p-6 md:p-10 shadow-[0_8px_28px_rgba(2,130,117,0.06)]" id="reviews">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+        <!-- Left Rating Summary -->
+        <div class="lg:col-span-4 bg-mint-surface p-6 rounded-xl flex flex-col justify-between">
+          <div>
+            <span class="text-[12px] text-primary font-bold uppercase">Подтверждённые отзывы Ozon</span>
+            <div class="flex items-baseline gap-3 mt-2">
+              <span class="text-[44px] font-extrabold text-on-surface">4.9</span>
+              <div>
+                <div class="flex text-warm-amber">
+                  <span class="material-symbols-outlined text-[20px]" style="font-variation-settings:'FILL' 1">star</span>
+                  <span class="material-symbols-outlined text-[20px]" style="font-variation-settings:'FILL' 1">star</span>
+                  <span class="material-symbols-outlined text-[20px]" style="font-variation-settings:'FILL' 1">star</span>
+                  <span class="material-symbols-outlined text-[20px]" style="font-variation-settings:'FILL' 1">star</span>
+                  <span class="material-symbols-outlined text-[20px]" style="font-variation-settings:'FILL' 1">star</span>
+                </div>
+                <span class="text-[12px] text-on-surface-variant">98% покупателей рекомендуют</span>
+              </div>
+            </div>
+          </div>
+          <a href="https://www.ozon.ru/seller/ekosoft/" target="_blank" rel="noopener" class="mt-6 w-full py-3 rounded-full bg-primary text-on-primary font-bold text-[13px] hover:bg-primary-container transition-colors text-center block">
+            Смотреть отзывы на Ozon →
+          </a>
+        </div>
+
+        <!-- Right Reviews Cards -->
+        <div class="lg:col-span-8 flex flex-col gap-4" id="pd-reviews-list"></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Shared Animated Wave + Walking Cat Scene & Stitch Footer -->
+  <div id="site-footer"></div>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const products = (window.ECOSOFT_DATA && window.ECOSOFT_DATA.products) || [];
+      const reviews = (window.ECOSOFT_DATA && window.ECOSOFT_DATA.reviews) || [];
+      const params = new URLSearchParams(window.location.search);
+      const reqId = params.get('id') || 'naisy-premium-4-5';
+
+      let currentProduct = window.findItemById(reqId) || products.find(p => p.id === 'naisy-premium-4-5') || products[0];
+      let currentQty = 1;
+      let currentCats = 1;
+
+      function renderProductDetail(p) {
+        currentProduct = p;
+        document.title = `${p.name} — Производитель кошачьих наполнителей ООО «Экософт»`;
+        document.getElementById('pd-badge').textContent = p.badge || p.brand;
+        document.getElementById('pd-main-img').src = p.image;
+        document.getElementById('pd-main-img').alt = p.name;
+        document.getElementById('pd-subtitle-pill').textContent = p.subtitle || p.shortDesc;
+        document.getElementById('pd-brand-chip').textContent = `Бренд: ${p.brand} (Производитель «Экософт»)`;
+        document.getElementById('pd-sku').textContent = `Арт: ${p.sku}`;
+        document.getElementById('pd-rating').textContent = p.rating || '4.9';
+        document.getElementById('pd-reviews-count').textContent = `(${p.reviewsCount || 180} отзывов)`;
+        document.getElementById('pd-title').textContent = p.name;
+        document.getElementById('pd-desc').textContent = p.shortDesc;
+        document.getElementById('pd-price').textContent = window.formatPrice(p.price);
+        document.getElementById('pd-old-price').textContent = p.oldPrice ? window.formatPrice(p.oldPrice) : '';
+        const perL = p.volumeL ? Math.round(p.price / p.volumeL) : Math.round(p.price / (p.weightKg || 1));
+        document.getElementById('pd-per-liter').textContent = `Выгода от производителя: ${perL} ₽ за литр • Фасовка ${p.volumeL} л (${p.weightKg} кг)`;
+        document.getElementById('pd-full-desc').textContent = p.fullDesc || p.shortDesc;
+
+        // Миниатюры галереи: 3 согласованных фото (упаковка + аутентичный наполнитель внутри + доп. ракурс/лупа)
+        const categoryFallbacks = {
+          wood: ['image/granules_wood_kotyat.jpg', 'image/granules_wood_lesnoy.jpg', 'image/murzik_snezhok_lesnoy_pack.jpg'],
+          clumping: ['image/granules_bentonite_clump.jpg', 'image/granules_superkomok_cats.jpg', 'image/murzik_snezhok_extra_pack.jpg'],
+          zeolite: ['image/murzik_snezhok_zeolite_pack.jpg', 'image/granules_silica_white.jpg', 'image/granules_ecosoft_comfort.jpg'],
+          silica: ['image/granules_naicy_silica.jpg', 'image/granules_ecosoft_elite.jpg', 'image/murzik_snezhok_silica_pack.jpg']
+        };
+
+        const galleryImgs = (p.gallery && p.gallery.length ? p.gallery : [p.image]);
+        const allThumbs = [...galleryImgs].filter(src => !src.includes('design_lab_sorbents'));
+        const catFallbacks = categoryFallbacks[p.category] || categoryFallbacks.silica;
+        for (const ex of catFallbacks) {
+          if (allThumbs.length < 3 && !allThumbs.includes(ex)) allThumbs.push(ex);
+        }
+
+        window.switchPdThumb = function(src, btn) {
+          const mainImg = document.getElementById('pd-main-img');
+          if (mainImg) mainImg.src = src;
+          document.querySelectorAll('#pd-thumbs button').forEach(b => {
+            b.classList.remove('ring-2', 'ring-primary');
+            b.classList.add('opacity-85');
+          });
+          if (btn) {
+            btn.classList.add('ring-2', 'ring-primary');
+            btn.classList.remove('opacity-85');
+          }
+        };
+
+        document.getElementById('pd-thumbs').innerHTML = allThumbs.slice(0, 3).map((src, idx) => `
+          <button type="button" onclick="switchPdThumb('${src}', this)" class="aspect-square bg-pure-white rounded-xl p-2 ${idx === 0 ? 'ring-2 ring-primary' : ' opacity-85 hover:opacity-100'} flex items-center justify-center transition-all cursor-pointer shadow-sm">
+            <img src="${src}" alt="${p.name}" class="w-full h-full object-contain rounded-lg"/>
+          </button>
+        `).join('');
+
+        // Варианты фасовки (товары того же бренда или той же категории)
+        let relatedVariants = products.filter(item => item.brand === p.brand);
+        if (relatedVariants.length < 4) {
+          relatedVariants = products.filter(item => item.category === p.category);
+        }
+        // Убедимся, что текущий товар входит в список вариантов
+        if (!relatedVariants.some(x => x.id === p.id)) {
+          relatedVariants.unshift(p);
+        }
+        document.getElementById('pd-volume-variants').innerHTML = relatedVariants.slice(0, 4).map(v => {
+          const active = v.id === p.id;
+          return `
+            <a href="product.html?id=${v.id}" class="flex flex-col items-start p-3 rounded-xl ${active ? 'bg-mint-surface ring-2 ring-primary' : 'bg-surface-container-low hover:bg-surface-container'} text-left transition-all">
+              <span class="text-[11px] font-bold ${active ? 'text-primary' : 'text-outline'} truncate w-full">${v.name.replace(v.brand, '').trim() || v.brand}</span>
+              <span class="text-[15px] font-extrabold text-on-surface mt-0.5">${v.volumeL} л (${v.weightKg} кг)</span>
+              <span class="text-[12px] font-bold text-primary mt-0.5">${window.formatPrice(v.price)}</span>
+            </a>
+          `;
+        }).join('');
+
+        // Таблица характеристик
+        const specsObj = p.specs || {
+          'Бренд': p.brand,
+          'Категория': p.categoryLabel,
+          'Влагообъём': `${p.volumeL} л`,
+          'Вес нетто': `${p.weightKg} кг`,
+          'Производитель': 'ООО «Экософт» (МО, г. Люберцы)'
+        };
+        document.getElementById('pd-specs-list').innerHTML = Object.entries(specsObj).map(([k, val]) => `
+          <div class="flex justify-between py-2 border-b border-outline-variant/30 gap-4">
+            <span class="text-on-surface-variant">${k}</span>
+            <span class="font-bold text-on-surface text-right">${val}</span>
+          </div>
+        `).join('');
+
+        updateLifespanCalc();
+
+        // Cross-sell (4 других товара)
+        const cross = products.filter(x => x.id !== p.id).slice(0, 4);
+        document.getElementById('pd-cross-sell').innerHTML = cross.map(c => window.createStitchProductCard(c)).join('');
+      }
+
+      function updateLifespanCalc() {
+        const baseDaysPerLiter = currentProduct.category && currentProduct.category.includes('silica') ? 6.5 : 4.5;
+        const totalDays = Math.max(5, Math.round((currentProduct.volumeL * baseDaysPerLiter) / currentCats));
+        const costPerDay = (currentProduct.price / totalDays).toFixed(1);
+        document.getElementById('calc-days-result').textContent = `~ ${totalDays} дней`;
+        document.getElementById('calc-day-cost').textContent = `${costPerDay} ₽ / сутки`;
+      }
+
+      document.querySelectorAll('#pd-cat-calc-btns button').forEach(btn => {
+        btn.addEventListener('click', () => {
+          document.querySelectorAll('#pd-cat-calc-btns button').forEach(b => {
+            b.className = 'px-3 min-w-[40px] h-10 rounded-lg bg-pure-white text-on-surface hover:bg-surface-container font-bold text-[13px]';
+          });
+          btn.className = 'px-3 min-w-[40px] h-10 rounded-lg bg-primary text-on-primary font-bold text-[13px] shadow-xs';
+          currentCats = parseInt(btn.dataset.cats, 10) || 1;
+          updateLifespanCalc();
+        });
+      });
+
+      document.getElementById('pd-qty-minus').addEventListener('click', () => {
+        currentQty = Math.max(1, currentQty - 1);
+        document.getElementById('pd-qty-val').textContent = currentQty;
+      });
+      document.getElementById('pd-qty-plus').addEventListener('click', () => {
+        currentQty += 1;
+        document.getElementById('pd-qty-val').textContent = currentQty;
+      });
+
+      document.getElementById('pd-add-btn').addEventListener('click', () => {
+        window.EcoCart.add(currentProduct.id, currentQty);
+      });
+      document.getElementById('pd-quick-btn').addEventListener('click', () => {
+        window.EcoCart.openQuickBuy(currentProduct.id);
+      });
+
+      // Переключение табов
+      document.querySelectorAll('#pd-tabs-nav button').forEach(btn => {
+        btn.addEventListener('click', () => {
+          document.querySelectorAll('#pd-tabs-nav button').forEach(b => {
+            b.className = 'px-5 py-2.5 rounded-full bg-mint-surface text-on-surface hover:bg-mint-subtle font-semibold text-[14px] transition-colors';
+          });
+          btn.className = 'px-5 py-2.5 rounded-full bg-primary text-on-primary font-bold text-[14px]';
+          ['desc', 'howto', 'certs'].forEach(t => {
+            document.getElementById('pd-tab-' + t).classList.toggle('hidden', t !== btn.dataset.tab);
+          });
+        });
+      });
+
+      // Отзывы
+      document.getElementById('pd-reviews-list').innerHTML = reviews.slice(0, 3).map(r => `
+        <div class="p-5 rounded-xl bg-surface-container-low flex flex-col gap-2">
+          <div class="flex flex-wrap items-center justify-between gap-2">
+            <div class="flex items-center gap-2.5">
+              <div class="w-9 h-9 rounded-full bg-primary text-pure-white flex items-center justify-center font-bold text-[13px]">${r.author[0]}</div>
+              <div>
+                <div class="text-[14px] font-bold text-on-surface">${r.author}</div>
+                <div class="text-[11px] text-outline">${r.source} • ${r.product}</div>
+              </div>
+            </div>
+            <div class="flex text-warm-amber">
+              <span class="material-symbols-outlined text-[16px]" style="font-variation-settings:'FILL' 1">star</span>
+              <span class="material-symbols-outlined text-[16px]" style="font-variation-settings:'FILL' 1">star</span>
+              <span class="material-symbols-outlined text-[16px]" style="font-variation-settings:'FILL' 1">star</span>
+              <span class="material-symbols-outlined text-[16px]" style="font-variation-settings:'FILL' 1">star</span>
+              <span class="material-symbols-outlined text-[16px]" style="font-variation-settings:'FILL' 1">star</span>
+            </div>
+          </div>
+          <p class="text-[13px] text-on-surface leading-relaxed mt-1">${r.text}</p>
+        </div>
+      `).join('');
+
+      renderProductDetail(currentProduct);
+    });
+  </script>
+</body>
+</html>

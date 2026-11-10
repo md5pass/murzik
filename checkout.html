@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Оформление заказа и Корзина без регистрации — ООО «Экософт»</title>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#00675c",
+            "primary-container": "#028275",
+            "on-primary": "#ffffff",
+            "on-primary-container": "#f4fffc",
+            "primary-fixed": "#8df5e5",
+            "secondary": "#00677e",
+            "secondary-container": "#83defd",
+            "on-secondary": "#ffffff",
+            "on-secondary-container": "#006076",
+            "tertiary": "#96412b",
+            "tertiary-container": "#b55940",
+            "on-tertiary": "#ffffff",
+            "surface": "#eefcff",
+            "surface-bright": "#eefcff",
+            "surface-container-lowest": "#ffffff",
+            "surface-container-low": "#e2f8fc",
+            "surface-container": "#dcf2f6",
+            "surface-container-high": "#d7ecf0",
+            "surface-container-highest": "#d1e6ea",
+            "on-surface": "#0a1e22",
+            "on-surface-variant": "#3e4947",
+            "outline": "#6e7a77",
+            "outline-variant": "#bdc9c6",
+            "error": "#ba1a1a",
+            "badge-odor-control": "#028275",
+            "badge-moisture": "#007F9B",
+            "badge-dust-free": "#3D5A80",
+            "badge-natural": "#4F772D",
+            "warm-amber": "#F4A261",
+            "mint-surface": "#F2F9F8",
+            "mint-subtle": "#C8E5E1",
+            "pure-white": "#FFFFFF",
+            "slate-dark": "#162E33"
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body class="bg-surface text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container">
+
+  <!-- Shared Stitch Header -->
+  <div id="site-header"></div>
+
+  <!-- MAIN CHECKOUT CONTENT (Exact Stitch Screen 5: 561704e8692446528c0b10dc0d071249.html) -->
+  <main class="max-w-[1320px] mx-auto px-4 md:px-6 lg:px-8 py-8">
+    <!-- Breadcrumbs & Linear Progress Indicator -->
+    <div class="mb-8">
+      <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+        <div>
+          <a class="inline-flex items-center gap-1.5 text-[12px] text-secondary hover:text-primary transition-colors mb-1 font-semibold" href="catalog.html">
+            <span class="material-symbols-outlined text-[16px]">arrow_back</span>
+            <span>Вернуться в каталог продукции</span>
+          </a>
+          <h1 class="text-[28px] sm:text-[34px] font-extrabold text-on-surface tracking-tight">Оформление заказа и Корзина</h1>
+          <p class="text-[14px] text-on-surface-variant mt-0.5">Быстрый заказ напрямую от производителя ООО «Экософт» <strong>без необходимости регистрации</strong> и создания пароля.</p>
+        </div>
+
+        <!-- 3-Step Linear Progress Pill -->
+        <div class="flex items-center gap-2 sm:gap-4 bg-pure-white px-5 py-3 rounded-2xl shadow-[0_4px_20px_rgba(2,130,117,0.06)]">
+          <div class="flex items-center gap-2 text-primary">
+            <span class="w-6 h-6 rounded-full bg-mint-subtle text-primary flex items-center justify-center text-[12px] font-bold">
+              <span class="material-symbols-outlined text-[15px]">check</span>
+            </span>
+            <span class="text-[13px] font-semibold">1. Корзина</span>
+          </div>
+          <div class="w-6 h-[2px] bg-primary/30 rounded-full"></div>
+          <div class="flex items-center gap-2 text-primary">
+            <span class="w-6 h-6 rounded-full bg-primary text-pure-white flex items-center justify-center text-[12px] font-bold shadow-sm">2</span>
+            <span class="text-[13px] font-bold">2. Оформление</span>
+          </div>
+          <div class="w-6 h-[2px] bg-surface-container-highest rounded-full"></div>
+          <div class="flex items-center gap-2 text-outline">
+            <span class="w-6 h-6 rounded-full bg-surface-container text-outline flex items-center justify-center text-[12px] font-bold">3</span>
+            <span class="text-[13px] font-medium">3. Счёт / Доставка</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2-COLUMN ASYMMETRIC CHECKOUT GRID -->
+    <form id="checkout-main-form" onsubmit="window.submitFullCheckout(event)" class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+
+      <!-- LEFT COLUMN: STEPS & FORMS (7 COLUMNS ON DESKTOP) -->
+      <div class="lg:col-span-7 flex flex-col gap-6">
+
+        <!-- Official Delivery & Payment Policy Banner from murzik.biz -->
+        <div class="p-5 rounded-2xl bg-mint-surface border border-mint-subtle/80 shadow-[0_4px_20px_rgba(0,103,92,0.04)] flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+          <div class="flex items-start gap-3.5">
+            <div class="w-10 h-10 rounded-xl bg-primary text-pure-white flex items-center justify-center shrink-0 mt-0.5">
+              <span class="material-symbols-outlined text-[22px]">local_shipping</span>
+            </div>
+            <div class="flex flex-col gap-1 text-[13px]">
+              <div class="font-extrabold text-on-surface flex items-center gap-2 flex-wrap">
+                <span>Прямая доставка производителя «Экософт» по Москве и МО:</span>
+                <span class="px-2.5 py-0.5 rounded-full bg-primary text-pure-white text-[11px] font-bold">1–3 рабочих дня</span>
+              </div>
+              <p class="text-on-surface-variant leading-relaxed">
+                Бесплатная доставка по Москве при заказе <strong>от 7 500 ₽</strong>. От МКАД — <strong>15 ₽ за 1 км</strong>. Оплата при получении по накладной и чеку. <em>(Самовывоза со склада нет)</em>.
+              </p>
+            </div>
+          </div>
+          <div class="flex items-center gap-2 px-3 py-1.5 rounded-xl bg-pure-white border border-mint-subtle text-primary font-bold text-[12px] shrink-0">
+            <span class="material-symbols-outlined text-[17px]">schedule</span>
+            <span>Заявки на завтра: 9:00–16:00</span>
+          </div>
+        </div>
+
+        <!-- Customer Type Segmented Switcher (B2C vs B2B) -->
+        <div class="bg-pure-white p-6 rounded-2xl shadow-[0_8px_28px_rgba(2,130,117,0.06)]">
+          <div class="flex items-center justify-between mb-3">
+            <span class="text-[11px] uppercase tracking-wider text-outline font-bold">Выберите статус покупателя</span>
+            <span class="px-2.5 py-0.5 rounded-full bg-mint-surface text-badge-odor-control text-[11px] font-bold">Без регистрации на сайте</span>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 p-1.5 bg-surface-container-low rounded-xl" id="buyer-type-switcher">
+            <button type="button" data-type="b2c" class="buyer-type-btn flex items-center justify-center gap-2 py-3 px-4 rounded-lg bg-pure-white text-primary shadow-sm font-bold text-[13px] transition-all">
+              <span class="material-symbols-outlined text-[20px]">person</span>
+              <span>Физическое лицо (Розница / Питомник)</span>
+            </button>
+            <button type="button" data-type="b2b" class="buyer-type-btn flex items-center justify-center gap-2 py-3 px-4 rounded-lg text-on-surface-variant hover:text-on-surface font-semibold text-[13px] transition-all">
+              <span class="material-symbols-outlined text-[20px]">business_center</span>
+              <span>Юридическое лицо или ИП (Счёт с НДС 20%)</span>
+            </button>
+          </div>
+          <p id="buyer-type-hint" class="text-[12px] text-on-surface-variant mt-3 flex items-center gap-1.5">
+            <span class="material-symbols-outlined text-[16px] text-secondary">info</span>
+            <span>Для заводчиков и питомников действуют оптовые цены на мешки 20 л, 50 л и 60 л без образования юр. лица.</span>
+          </p>
+        </div>
+
+        <!-- STEP 1: КОНТАКТНЫЕ ДАННЫЕ ПОЛУЧАТЕЛЯ -->
+        <section class="bg-pure-white p-6 md:p-8 rounded-2xl shadow-[0_8px_28px_rgba(2,130,117,0.06)]">
+          <div class="flex items-center gap-3 mb-5">
+            <div class="w-8 h-8 rounded-full bg-mint-subtle text-primary flex items-center justify-center font-bold text-[14px]">1</div>
+            <div>
+              <h2 class="text-[19px] font-bold text-on-surface">Данные получателя</h2>
+              <p class="text-[12px] text-on-surface-variant">Отправим SMS с трек-номером отгрузки и кассовый чек (или счёт-договор)</p>
+            </div>
+          </div>
+
+          <!-- B2B Extra Fields (Hidden by default unless B2B is selected) -->
+          <div id="b2b-company-fields" class="hidden grid grid-cols-1 md:grid-cols-2 gap-4 mb-4 p-4 rounded-xl bg-mint-surface border border-mint-subtle">
+            <div class="md:col-span-2">
+              <label class="text-[12px] font-bold text-primary block mb-1">Наименование организации или ИП *</label>
+              <input id="co-company" type="text" placeholder="ООО «ЗооМаркет» или ИП Иванов И.И." class="w-full px-4 py-2.5 rounded-lg bg-pure-white text-on-surface text-[14px] outline-none focus:ring-2 focus:ring-primary"/>
+            </div>
+            <div>
+              <label class="text-[12px] font-bold text-primary block mb-1">ИНН (10 или 12 цифр) *</label>
+              <input id="co-inn" type="text" placeholder="7700000000" class="w-full px-4 py-2.5 rounded-lg bg-pure-white text-on-surface text-[14px] outline-none focus:ring-2 focus:ring-primary"/>
+            </div>
+            <div>
+              <label class="text-[12px] font-bold text-primary block mb-1">КПП (для ООО)</label>
+              <input id="co-kpp" type="text" placeholder="770001001" class="w-full px-4 py-2.5 rounded-lg bg-pure-white text-on-surface text-[14px] outline-none focus:ring-2 focus:ring-primary"/>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="flex flex-col gap-1.5">
+              <label class="text-[13px] text-on-surface font-semibold" for="co-name">Имя и фамилия получателя *</label>
+              <div class="relative flex items-center">
+                <span class="material-symbols-outlined absolute left-3.5 text-outline text-[18px]">badge</span>
+                <input required id="co-name" type="text" value="Александр Смирнов" placeholder="Например, Александр Смирнов" class="w-full pl-10 pr-4 py-3 bg-surface-container-low focus:bg-pure-white rounded-lg text-[14px] text-on-surface outline-none focus:ring-2 focus:ring-primary transition-all"/>
+              </div>
+            </div>
+
+            <div class="flex flex-col gap-1.5">
+              <label class="text-[13px] text-on-surface font-semibold" for="co-phone">Контактный телефон *</label>
+              <div class="relative flex items-center">
+                <span class="material-symbols-outlined absolute left-3.5 text-outline text-[18px]">call</span>
+                <input required id="co-phone" type="tel" value="+7 (926) 555-84-12" placeholder="+7 (999) 000-00-00" class="w-full pl-10 pr-4 py-3 bg-surface-container-low focus:bg-pure-white rounded-lg text-[14px] text-on-surface outline-none focus:ring-2 focus:ring-primary transition-all"/>
+              </div>
+            </div>
+
+            <div class="flex flex-col gap-1.5 md:col-span-2">
+              <label class="text-[13px] text-on-surface font-semibold" for="co-email">Электронная почта (для чека или счёта с НДС)</label>
+              <div class="relative flex items-center">
+                <span class="material-symbols-outlined absolute left-3.5 text-outline text-[18px]">mail</span>
+                <input id="co-email" type="email" value="a.smirnov@petcare-home.ru" placeholder="name@example.ru" class="w-full pl-10 pr-4 py-3 bg-surface-container-low focus:bg-pure-white rounded-lg text-[14px] text-on-surface outline-none focus:ring-2 focus:ring-primary transition-all"/>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- STEP 2: СПОСОБ И АДРЕС ДОСТАВКИ (murzik.biz rules) -->
+        <section class="bg-pure-white p-6 md:p-8 rounded-2xl shadow-[0_8px_28px_rgba(2,130,117,0.06)]">
+          <div class="flex items-center justify-between gap-2 mb-5">
+            <div class="flex items-center gap-3">
+              <div class="w-8 h-8 rounded-full bg-mint-subtle text-primary flex items-center justify-center font-bold text-[14px]">2</div>
+              <div>
+                <h2 class="text-[19px] font-bold text-on-surface">Способ и адрес доставки</h2>
+                <p class="text-[12px] text-on-surface-variant">Отгрузка службой доставки производителя ООО «Экософт» (срок 1–3 дня)</p>
+              </div>
+            </div>
+            <span class="hidden sm:inline-flex items-center gap-1 px-3 py-1 rounded-full bg-mint-surface text-primary text-[11px] font-bold">
+              <span class="material-symbols-outlined text-[15px]">local_shipping</span>
+              1–3 рабочих дня
+            </span>
+          </div>
+
+          <!-- Delivery Method Radio Cards (Exact murzik.biz rules) -->
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-3 mb-5" id="delivery-cards">
+            <!-- 1. Москва в пределах МКАД -->
+            <div data-del="courier-msk" data-mode="msk" class="del-card relative p-4 rounded-xl bg-mint-surface ring-2 ring-primary cursor-pointer transition-all flex flex-col justify-between gap-2">
+              <div class="flex items-start justify-between">
+                <div class="flex items-center gap-2">
+                  <span class="material-symbols-outlined text-primary text-[22px]">directions_car</span>
+                  <span class="text-[14px] font-bold text-on-surface">По Москве (МКАД)</span>
+                </div>
+                <span id="badge-msk" class="px-2 py-0.5 rounded-full bg-primary text-pure-white text-[11px] font-bold">Бесплатно</span>
+              </div>
+              <p class="text-[12px] text-on-surface-variant leading-relaxed">Бесплатно при заказе от 7 500 ₽ (при меньшей сумме — 390 ₽). Срок 1–3 дня.</p>
+            </div>
+
+            <!-- 2. Подмосковье за МКАД -->
+            <div data-del="courier-mo" data-mode="mo" class="del-card relative p-4 rounded-xl bg-surface-container-low hover:bg-surface-container cursor-pointer transition-all flex flex-col justify-between gap-2">
+              <div class="flex items-start justify-between">
+                <div class="flex items-center gap-2">
+                  <span class="material-symbols-outlined text-badge-moisture text-[22px]">commute</span>
+                  <span class="text-[14px] font-bold text-on-surface">За МКАД (МО)</span>
+                </div>
+                <span class="px-2 py-0.5 rounded-full bg-badge-moisture text-pure-white text-[11px] font-bold">15 ₽ / км</span>
+              </div>
+              <p class="text-[12px] text-on-surface-variant leading-relaxed">Бесплатно до МКАД при заказе от 7 500 ₽ + 15 ₽ за каждый 1 км от МКАД.</p>
+            </div>
+
+            <!-- 3. ТК по всей России -->
+            <div data-del="tk" data-mode="tk" class="del-card relative p-4 rounded-xl bg-surface-container-low hover:bg-surface-container cursor-pointer transition-all flex flex-col justify-between gap-2">
+              <div class="flex items-start justify-between">
+                <div class="flex items-center gap-2">
+                  <span class="material-symbols-outlined text-badge-dust-free text-[22px]">pallet</span>
+                  <span class="text-[14px] font-bold text-on-surface">ТК по России</span>
+                </div>
+                <span class="px-2 py-0.5 rounded-full bg-pure-white text-on-surface text-[11px] font-bold">По тарифу ТК</span>
+              </div>
+              <p class="text-[12px] text-on-surface-variant leading-relaxed">ПЭК, Деловые Линии, СДЭК. Бесплатно до терминала в Москве при заказе от 7 500 ₽.</p>
+            </div>
+          </div>
+
+          <!-- Dynamic Distance from MKAD (Shown only for courier-mo) -->
+          <div id="mo-distance-row" class="hidden p-4 rounded-xl bg-mint-surface/60 border border-mint-subtle mb-4 flex items-center justify-between gap-4">
+            <div class="flex items-center gap-3">
+              <span class="material-symbols-outlined text-primary text-[22px]">add_road</span>
+              <div>
+                <label for="co-km" class="text-[13px] font-bold text-on-surface block">Расстояние от МКАД (км):</label>
+                <span class="text-[11px] text-on-surface-variant">Тариф производителя: 15 ₽ за 1 км от МКАД (murzik.biz)</span>
+              </div>
+            </div>
+            <div class="flex items-center gap-2">
+              <input id="co-km" type="number" min="1" max="150" value="10" class="w-20 px-3 py-1.5 rounded-lg bg-pure-white border border-mint-subtle text-[14px] font-extrabold text-center text-primary outline-none focus:ring-2 focus:ring-primary"/>
+              <span class="text-[14px] font-extrabold text-primary" id="co-km-cost">+ 150 ₽</span>
+            </div>
+          </div>
+
+          <!-- Floor Lift Option (Official murzik.biz tariff) -->
+          <div class="p-4 rounded-xl bg-surface-container-low mb-4 border border-outline-variant/30 flex flex-col gap-2.5">
+            <div class="flex items-center justify-between">
+              <label class="flex items-center gap-2.5 cursor-pointer">
+                <input id="lift-checkbox" type="checkbox" class="w-4 h-4 accent-primary rounded"/>
+                <span class="text-[13px] font-bold text-on-surface">Подъём на этаж (мешки 25–30 кг и коробки)</span>
+              </label>
+              <span class="text-[11px] font-bold text-primary">Тариф murzik.biz</span>
+            </div>
+            <div id="lift-details" class="hidden grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2.5 border-t border-outline-variant/20">
+              <div>
+                <label class="text-[12px] font-semibold text-on-surface block mb-1">Наличие лифта</label>
+                <select id="lift-has-elevator" class="w-full px-3 py-2 rounded-lg bg-pure-white border border-outline-variant/40 text-[13px] outline-none focus:ring-2 focus:ring-primary">
+                  <option value="yes">Есть лифт (пассажирский / грузовой) — 300 ₽</option>
+                  <option value="no">Лифта нет (пешком по лестнице — 50 ₽ / этаж за мешок)</option>
+                </select>
+              </div>
+              <div id="floor-number-wrap" class="hidden">
+                <label class="text-[12px] font-semibold text-on-surface block mb-1">Этаж для подъёма</label>
+                <input id="lift-floor" type="number" min="1" max="25" value="2" class="w-full px-3 py-2 rounded-lg bg-pure-white border border-outline-variant/40 text-[13px] outline-none focus:ring-2 focus:ring-primary"/>
+              </div>
+            </div>
+          </div>
+
+          <!-- Address Input -->
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
+            <div>
+              <label class="text-[12px] font-semibold text-on-surface block mb-1">Город / Населённый пункт *</label>
+              <input required id="co-city" type="text" value="Москва" class="w-full px-3.5 py-2.5 bg-surface-container-low rounded-lg text-[14px] text-on-surface outline-none focus:ring-2 focus:ring-primary"/>
+            </div>
+            <div class="md:col-span-2">
+              <label class="text-[12px] font-semibold text-on-surface block mb-1">Улица, дом, квартира / офис *</label>
+              <input required id="co-address" type="text" value="ул. Лесная, д. 14, кв. 82" class="w-full px-3.5 py-2.5 bg-surface-container-low rounded-lg text-[14px] text-on-surface outline-none focus:ring-2 focus:ring-primary"/>
+            </div>
+          </div>
+
+          <!-- Official murzik.biz Note on Self-Pickup -->
+          <div class="mt-4 p-3 rounded-xl bg-surface-container-low/80 text-[12px] text-on-surface-variant flex items-center gap-2">
+            <span class="material-symbols-outlined text-outline text-[17px] shrink-0">info</span>
+            <span><strong>Обратите внимание:</strong> самовывоза товара со склада нет. Доставка осуществляется собственной курьерской службой производителя по Москве и Подмосковью либо транспортными компаниями по РФ.</span>
+          </div>
+        </section>
+
+        <!-- STEP 3: СПОСОБ ОПЛАТЫ (murzik.biz rules) -->
+        <section class="bg-pure-white p-6 md:p-8 rounded-2xl shadow-[0_8px_28px_rgba(2,130,117,0.06)]">
+          <div class="flex items-center gap-3 mb-5">
+            <div class="w-8 h-8 rounded-full bg-mint-subtle text-primary flex items-center justify-center font-bold text-[14px]">3</div>
+            <div>
+              <h2 class="text-[19px] font-bold text-on-surface">Способ оплаты</h2>
+              <p class="text-[12px] text-on-surface-variant">Оплата при получении по чеку и накладной (murzik.biz) или безналичный расчёт</p>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3" id="payment-cards">
+            <!-- 1. При получении (Основной метод murzik.biz) -->
+            <div data-pay="Оплата при получении (курьеру)" class="pay-card p-4 rounded-xl bg-mint-surface ring-2 ring-primary cursor-pointer flex items-start gap-3">
+              <div class="w-9 h-9 rounded-lg bg-primary text-pure-white flex items-center justify-center shrink-0">
+                <span class="material-symbols-outlined text-[20px]">payments</span>
+              </div>
+              <div>
+                <div class="flex items-center gap-1.5 flex-wrap">
+                  <span class="text-[14px] font-bold text-on-surface">При получении курьеру</span>
+                  <span class="px-2 py-0.5 rounded-full bg-primary/10 text-primary text-[10px] font-extrabold">murzik.biz</span>
+                </div>
+                <p class="text-[12px] text-on-surface-variant mt-1 leading-snug">В момент передачи продукции на основании накладной и кассового чека (наличными или картой/переводом).</p>
+              </div>
+            </div>
+
+            <!-- 2. Безналичный счёт для Юр. лиц и ИП -->
+            <div data-pay="Счёт для Юр. лиц и ИП (с НДС 20%)" class="pay-card p-4 rounded-xl bg-surface-container-low hover:bg-surface-container cursor-pointer flex items-start gap-3">
+              <div class="w-9 h-9 rounded-lg bg-pure-white text-badge-dust-free flex items-center justify-center shrink-0">
+                <span class="material-symbols-outlined text-[20px]">description</span>
+              </div>
+              <div>
+                <div class="text-[14px] font-bold text-on-surface">Счёт для ИП / ООО (с НДС 20%)</div>
+                <p class="text-[12px] text-on-surface-variant mt-1 leading-snug">Официальный счёт производителя ООО «Экософт», закрывающие документы (УПД) в ЭДО Диадок/СБИС или на бумаге.</p>
+              </div>
+            </div>
+
+            <!-- 3. СБП -->
+            <div data-pay="СБП (Система быстрых платежей)" class="pay-card p-4 rounded-xl bg-surface-container-low hover:bg-surface-container cursor-pointer flex items-start gap-3">
+              <div class="w-9 h-9 rounded-lg bg-pure-white text-secondary flex items-center justify-center shrink-0">
+                <span class="material-symbols-outlined text-[20px]">qr_code_2</span>
+              </div>
+              <div>
+                <div class="text-[14px] font-bold text-on-surface">СБП (по QR-коду онлайн)</div>
+                <p class="text-[12px] text-on-surface-variant mt-1 leading-snug">Мгновенная оплата без комиссии через приложение вашего банка по системе быстрых платежей.</p>
+              </div>
+            </div>
+
+            <!-- 4. Банковской картой онлайн -->
+            <div data-pay="Банковской картой онлайн" class="pay-card p-4 rounded-xl bg-surface-container-low hover:bg-surface-container cursor-pointer flex items-start gap-3">
+              <div class="w-9 h-9 rounded-lg bg-pure-white text-badge-moisture flex items-center justify-center shrink-0">
+                <span class="material-symbols-outlined text-[20px]">credit_card</span>
+              </div>
+              <div>
+                <div class="text-[14px] font-bold text-on-surface">Банковской картой онлайн</div>
+                <p class="text-[12px] text-on-surface-variant mt-1 leading-snug">МИР, Visa, MasterCard с отправкой электронного чека по 54-ФЗ на вашу почту.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- STEP 4: ДОПОЛНИТЕЛЬНЫЕ ОПЦИИ И ПРАВИЛА murzik.biz -->
+        <section class="bg-pure-white p-6 rounded-2xl shadow-[0_8px_28px_rgba(2,130,117,0.06)] flex flex-col gap-4">
+          <h3 class="text-[15px] font-bold text-on-surface">Дополнительные опции доставки</h3>
+          <label class="flex items-start gap-3 p-3.5 rounded-xl bg-surface-container-low cursor-pointer">
+            <input type="checkbox" checked class="mt-0.5 w-4 h-4 accent-primary rounded"/>
+            <div>
+              <div class="text-[13px] font-bold text-on-surface">Тихая доставка (не звонить в домофон, чтобы не тревожить кошку)</div>
+              <div class="text-[12px] text-on-surface-variant">Курьер свяжется по мобильному телефону за 15–30 минут до прибытия</div>
+            </div>
+          </label>
+
+          <!-- Official Rules & Warranty Accordion from murzik.biz/oplata-dostavka -->
+          <div class="p-4 rounded-xl bg-mint-surface/80 border border-mint-subtle flex flex-col gap-2 text-[12px] text-on-surface-variant">
+            <div class="flex items-center gap-2 font-bold text-primary text-[13px]">
+              <span class="material-symbols-outlined text-[18px]">verified</span>
+              <span>Официальные условия и правила ООО «Экософт» (murzik.biz):</span>
+            </div>
+            <ul class="flex flex-col gap-1.5 pl-1 leading-relaxed">
+              <li>• <strong>Сроки доставки:</strong> 1–3 рабочих дня с момента получения заявки по Москве и Подмосковью.</li>
+              <li>• <strong>Приём заявок на завтра:</strong> По телефонам (977) 529-85-25 и (926) 116-08-97 — с 9:00 до 16:00 текущего дня. На сайте круглосуточно 24/7.</li>
+              <li>• <strong>Оплата:</strong> Производится в момент передачи продукции клиенту на основании накладной и чека.</li>
+              <li>• <strong>Подъём на этаж:</strong> 1 мешок (10 шт., 25, 30 кг) — 50 руб./этаж. 2 коробки (8 шт.) — 25 руб./этаж. При наличии лифта — 300 руб.</li>
+              <li>• <strong>Претензии и брак:</strong> Претензии по доставке принимаются в течение 2 рабочих дней. В случае брака товар подлежит возврату для обмена.</li>
+              <li>• <strong>Отказ:</strong> При отказе клиента от привезённого товара оплачивается стоимость выезда курьера (доставки).</li>
+              <li>• <strong>Самовывоз:</strong> Самовывоза товара со склада нет.</li>
+            </ul>
+          </div>
+        </section>
+      </div>
+
+      <!-- RIGHT COLUMN: STICKY DYNAMIC ORDER SUMMARY & CART ITEMS (5 COLUMNS) -->
+      <aside class="lg:col-span-5 lg:sticky lg:top-24 flex flex-col gap-5">
+        <div class="bg-pure-white p-6 md:p-7 rounded-2xl shadow-[0_8px_28px_rgba(2,130,117,0.06)]">
+          <div class="flex items-center justify-between pb-4 mb-4 border-b border-outline-variant/25">
+            <div>
+              <h2 class="text-[19px] font-extrabold text-on-surface">Состав вашего заказа</h2>
+              <p id="co-summary-meta" class="text-[12px] text-on-surface-variant">Загрузка корзины...</p>
+            </div>
+            <button type="button" onclick="window.EcoCart.clear()" class="text-[12px] font-semibold text-outline hover:text-error transition-colors">
+              Очистить
+            </button>
+          </div>
+
+          <!-- Dynamic Cart Items List with +/- controls -->
+          <div id="co-items-list" class="flex flex-col gap-3 max-h-[340px] overflow-y-auto pr-1 mb-5"></div>
+
+          <!-- Quick Add Cross-Sell Pill inside Checkout -->
+          <div class="p-3.5 rounded-xl bg-mint-surface mb-5 flex items-center justify-between gap-3">
+            <div class="flex items-center gap-2.5">
+              <img src="image/ecosoft_elite_pic.jpg" alt="Экософт Элита" class="w-10 h-10 object-contain bg-pure-white rounded-lg p-1"/>
+              <div>
+                <div class="text-[12px] font-bold text-on-surface">Добавить «Экософт Элита 4,5 л»?</div>
+                <div class="text-[11px] text-primary font-semibold">С изумрудными гранулами • 295 ₽</div>
+              </div>
+            </div>
+            <button type="button" onclick="window.EcoCart.add('ecosoft-elita-4-5', 1)" class="px-3 py-1.5 rounded-full bg-primary text-pure-white text-[11px] font-bold shrink-0">
+              + Добавить
+            </button>
+          </div>
+
+          <!-- Promo Code -->
+          <div class="mb-5">
+            <div class="flex gap-2">
+              <input id="co-promo-input" type="text" placeholder="Промокод (например, ECOSOFT10)" class="flex-1 px-3.5 py-2.5 bg-surface-container-low rounded-lg text-[13px] text-on-surface uppercase outline-none focus:ring-2 focus:ring-primary"/>
+              <button type="button" id="co-promo-btn" class="px-4 py-2.5 bg-mint-subtle hover:bg-primary hover:text-pure-white text-primary font-bold text-[13px] rounded-lg transition-colors">
+                Применить
+              </button>
+            </div>
+            <p id="co-promo-msg" class="text-[11px] text-badge-odor-control font-semibold mt-1 hidden">Скидка 10% по промокоду активирована!</p>
+          </div>
+
+          <!-- Free Shipping Progress Tracker (7 500 ₽ threshold from murzik.biz) -->
+          <div id="co-free-shipping-card" class="mb-5 p-3.5 rounded-xl bg-mint-surface border border-mint-subtle/80 flex flex-col gap-2">
+            <div class="flex items-center justify-between text-[12px]">
+              <span class="font-bold text-on-surface" id="free-ship-title">Бесплатная доставка по Москве:</span>
+              <span class="font-extrabold text-primary" id="free-ship-status">от 7 500 ₽</span>
+            </div>
+            <div class="w-full bg-surface-container-highest rounded-full h-2 overflow-hidden">
+              <div id="free-ship-bar" class="bg-primary h-full rounded-full transition-all duration-300" style="width: 0%"></div>
+            </div>
+            <p id="free-ship-hint" class="text-[11px] text-on-surface-variant leading-snug">
+              Добавьте товаров на <strong>7 500 ₽</strong> для бесплатной доставки по Москве.
+            </p>
+          </div>
+
+          <!-- Cost Breakdown -->
+          <div class="flex flex-col gap-2.5 py-4 border-y border-outline-variant/25 mb-5 text-[13px]">
+            <div class="flex justify-between text-on-surface-variant">
+              <span id="co-row-items-label">Товары в корзине</span>
+              <span id="co-row-old" class="font-medium text-on-surface">0 ₽</span>
+            </div>
+            <div class="flex justify-between text-badge-odor-control">
+              <span>Прямая скидка производителя «Экософт»</span>
+              <span id="co-row-disc" class="font-bold">− 0 ₽</span>
+            </div>
+            <div class="flex justify-between text-on-surface-variant">
+              <span id="co-row-del-label">Доставка</span>
+              <span id="co-row-del" class="font-semibold text-on-surface">0 ₽</span>
+            </div>
+            <div id="co-row-lift-wrap" class="hidden justify-between text-on-surface-variant text-[12px]">
+              <span>Подъём на этаж (тариф производителя)</span>
+              <span id="co-row-lift" class="font-semibold text-on-surface">+ 0 ₽</span>
+            </div>
+          </div>
+
+          <!-- Final Total -->
+          <div class="flex items-baseline justify-between mb-5">
+            <div>
+              <span class="text-[16px] font-bold text-on-surface block">Итого к оплате</span>
+              <span class="text-[11px] text-outline">Включая НДС 20% (без скрытых комиссий)</span>
+            </div>
+            <span id="co-grand-total" class="text-[30px] font-extrabold text-primary">0 ₽</span>
+          </div>
+
+          <button type="submit" class="w-full py-4 px-6 bg-gradient-to-r from-primary to-primary-container hover:opacity-95 text-pure-white font-bold text-[15px] rounded-full shadow-lg transition-all flex items-center justify-center gap-2">
+            <span>Подтвердить заказ без регистрации</span>
+            <span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+          </button>
+        </div>
+      </aside>
+    </form>
+  </main>
+
+  <!-- Order Confirmation / Printable B2B Invoice Modal -->
+  <div id="co-success-modal" class="hidden fixed inset-0 z-[95] flex items-center justify-center p-4">
+    <div class="absolute inset-0 eco-drawer-backdrop" onclick="document.getElementById('co-success-modal').classList.add('hidden')"></div>
+    <div class="relative bg-pure-white rounded-3xl max-w-lg w-full p-6 md:p-8 shadow-2xl z-10 flex flex-col gap-4">
+      <div class="flex items-center justify-between">
+        <div class="w-12 h-12 rounded-2xl bg-mint-subtle text-primary flex items-center justify-center">
+          <span class="material-symbols-outlined text-[28px]">Task_alt</span>
+        </div>
+        <span id="modal-order-num" class="px-3.5 py-1 rounded-full bg-mint-surface text-primary font-extrabold text-[13px]">Заказ #ECO-84920</span>
+      </div>
+      <h3 class="text-[24px] font-extrabold text-on-surface">Спасибо! Ваш заказ принят в работу без регистрации</h3>
+      <p id="modal-order-details" class="text-[14px] text-on-surface-variant leading-relaxed"></p>
+      <div class="p-4 rounded-xl bg-surface-container-low text-[13px] flex flex-col gap-1.5">
+        <div class="flex justify-between"><span>Склад отгрузки:</span><strong>ООО «Экософт» (МО, г. Люберцы, Октябрьский пр-т, 411)</strong></div>
+        <div class="flex justify-between"><span>Телефон диспетчера:</span><strong>+7 (977) 529-85-25</strong></div>
+      </div>
+      <div class="flex flex-wrap gap-2.5 pt-2">
+        <button type="button" onclick="window.print()" class="flex-1 py-3 rounded-full bg-mint-surface text-primary font-bold text-[13px] flex items-center justify-center gap-1.5">
+          <span class="material-symbols-outlined text-[18px]">print</span>
+          Распечатать заказ / счёт
+        </button>
+        <a href="catalog.html" class="flex-1 py-3 rounded-full bg-primary text-pure-white font-bold text-[13px] text-center">
+          Вернуться в каталог
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Shared Animated Wave + Walking Cat Scene & Stitch Footer -->
+  <div id="site-footer"></div>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      let buyerType = 'b2c';
+      let deliveryMode = 'msk'; // 'msk', 'mo', 'tk'
+      let deliveryCost = 0;
+      let deliveryLabel = 'По Москве (МКАД)';
+      let paymentMethod = 'Оплата при получении (курьеру)';
+      let promoMultiplier = 1.0;
+
+      function updateDeliveryCalculation(goodsTotal) {
+        let baseCost = 0;
+        let kmExtra = 0;
+        let liftExtra = 0;
+
+        // Порог бесплатной доставки murzik.biz: 7 500 ₽
+        const freeThreshold = 7500;
+        const isFree = goodsTotal >= freeThreshold;
+
+        // Трекер бесплатной доставки
+        const trackerBar = document.getElementById('free-ship-bar');
+        const trackerTitle = document.getElementById('free-ship-title');
+        const trackerStatus = document.getElementById('free-ship-status');
+        const trackerHint = document.getElementById('free-ship-hint');
+        const badgeMsk = document.getElementById('badge-msk');
+
+        if (isFree) {
+          if (trackerBar) {
+            trackerBar.style.width = '100%';
+            trackerBar.className = 'bg-badge-odor-control h-full rounded-full transition-all duration-300';
+          }
+          if (trackerTitle) trackerTitle.textContent = 'Бесплатная доставка по Москве:';
+          if (trackerStatus) trackerStatus.textContent = 'Активирована (0 ₽)';
+          if (trackerHint) trackerHint.innerHTML = '✓ Ваш заказ свыше <strong>7 500 ₽</strong> доставляется по Москве бесплатно!';
+          if (badgeMsk) badgeMsk.textContent = '0 ₽ (Бесплатно)';
+        } else {
+          const pct = Math.max(5, Math.min(100, Math.round((goodsTotal / freeThreshold) * 100)));
+          if (trackerBar) {
+            trackerBar.style.width = pct + '%';
+            trackerBar.className = 'bg-primary h-full rounded-full transition-all duration-300';
+          }
+          if (trackerTitle) trackerTitle.textContent = 'Бесплатная доставка по Москве:';
+          if (trackerStatus) trackerStatus.textContent = 'от 7 500 ₽';
+          const remaining = freeThreshold - goodsTotal;
+          if (trackerHint) trackerHint.innerHTML = `Добавьте товаров на <strong>${window.formatPrice(remaining)}</strong> для бесплатной доставки по Москве.`;
+          if (badgeMsk) badgeMsk.textContent = 'Бесплатно от 7 500 ₽';
+        }
+
+        if (deliveryMode === 'msk') {
+          deliveryLabel = 'Курьером по Москве (в пределах МКАД)';
+          baseCost = isFree ? 0 : 390;
+        } else if (deliveryMode === 'mo') {
+          const kmInput = document.getElementById('co-km');
+          const km = Math.max(1, parseInt(kmInput.value, 10) || 10);
+          kmExtra = km * 15;
+          document.getElementById('co-km-cost').textContent = `+ ${window.formatPrice(kmExtra)}`;
+          baseCost = (isFree ? 0 : 390) + kmExtra;
+          deliveryLabel = `По Подмосковью (${km} км от МКАД)`;
+        } else if (deliveryMode === 'tk') {
+          deliveryLabel = 'Транспортной компанией по РФ';
+          baseCost = 0; // По тарифам ТК
+        }
+
+        // Подъём на этаж (тариф производителя murzik.biz)
+        const liftCheck = document.getElementById('lift-checkbox');
+        const liftWrap = document.getElementById('co-row-lift-wrap');
+        const liftValEl = document.getElementById('co-row-lift');
+
+        if (liftCheck && liftCheck.checked) {
+          const hasElevator = document.getElementById('lift-has-elevator').value === 'yes';
+          if (hasElevator) {
+            liftExtra = 300;
+          } else {
+            const floor = Math.max(1, parseInt(document.getElementById('lift-floor').value, 10) || 1);
+            liftExtra = floor * 50;
+          }
+          if (liftWrap) {
+            liftWrap.classList.remove('hidden');
+            liftWrap.classList.add('flex');
+            liftValEl.textContent = `+ ${window.formatPrice(liftExtra)}`;
+          }
+        } else {
+          if (liftWrap) {
+            liftWrap.classList.add('hidden');
+            liftWrap.classList.remove('flex');
+          }
+        }
+
+        deliveryCost = baseCost + liftExtra;
+        return { baseCost, kmExtra, liftExtra, isFree };
+      }
+
+      function renderCheckoutPage() {
+        const summary = window.EcoCart.getSummary();
+        const listEl = document.getElementById('co-items-list');
+        document.getElementById('co-summary-meta').textContent = `${summary.totalQty} шт. • Общий вес: ${summary.totalWeightKg} кг`;
+
+        if (summary.detailed.length === 0) {
+          listEl.innerHTML = `
+            <div class="p-6 text-center bg-surface-container-low rounded-xl">
+              <p class="font-bold text-on-surface text-[14px]">Корзина пуста</p>
+              <a href="catalog.html" class="inline-block mt-2 px-4 py-2 rounded-full bg-primary text-pure-white text-[12px] font-bold">Выбрать товары в каталоге</a>
+            </div>
+          `;
+        } else {
+          listEl.innerHTML = summary.detailed.map(item => `
+            <div class="flex gap-3 p-3 rounded-xl bg-surface-container-low items-center">
+              <a href="product.html?id=${item.id}" class="w-14 h-14 bg-pure-white rounded-lg p-1 flex items-center justify-center shrink-0">
+                <img src="${item.image}" alt="${item.name}" class="max-h-full max-w-full object-contain"/>
+              </a>
+              <div class="flex-1 min-w-0">
+                <a href="product.html?id=${item.id}" class="font-bold text-[13px] text-on-surface hover:text-primary truncate block">${item.name}</a>
+                <div class="text-[11px] text-on-surface-variant">${item.isBulk ? item.weightKg + ' кг' : item.volumeL + ' л (' + item.weightKg + ' кг)'} • ${window.formatPrice(item.price)}/шт</div>
+                <div class="flex items-center justify-between mt-1.5">
+                  <div class="inline-flex items-center bg-pure-white rounded-full px-1 py-0.5 shadow-xs">
+                    <button type="button" onclick="window.EcoCart.updateQty('${item.id}', -1)" class="w-5 h-5 rounded-full hover:bg-mint-surface text-on-surface font-bold text-[12px]">−</button>
+                    <span class="px-2 text-[12px] font-bold">${item.qty}</span>
+                    <button type="button" onclick="window.EcoCart.updateQty('${item.id}', 1)" class="w-5 h-5 rounded-full hover:bg-mint-surface text-on-surface font-bold text-[12px]">+</button>
+                  </div>
+                  <span class="font-extrabold text-primary text-[14px]">${window.formatPrice(item.lineTotal)}</span>
+                </div>
+              </div>
+              <button type="button" onclick="window.EcoCart.remove('${item.id}')" class="text-outline hover:text-error p-1" title="Удалить">
+                <span class="material-symbols-outlined text-[18px]">delete</span>
+              </button>
+            </div>
+          `).join('');
+        }
+
+        const discountedGoods = Math.round(summary.totalPrice * promoMultiplier);
+        const totalSavings = summary.discount + (summary.totalPrice - discountedGoods);
+
+        updateDeliveryCalculation(discountedGoods);
+
+        const grandTotal = summary.detailed.length ? discountedGoods + deliveryCost : 0;
+
+        document.getElementById('co-row-items-label').textContent = `Товары (${summary.totalQty} шт., ${summary.totalWeightKg} кг)`;
+        document.getElementById('co-row-old').textContent = window.formatPrice(summary.totalOldPrice);
+        document.getElementById('co-row-disc').textContent = `− ${window.formatPrice(totalSavings)}`;
+        document.getElementById('co-row-del-label').textContent = `Доставка (${deliveryLabel})`;
+        document.getElementById('co-row-del').textContent = deliveryCost === 0 ? 'Бесплатно' : window.formatPrice(deliveryCost);
+        document.getElementById('co-grand-total').textContent = window.formatPrice(grandTotal);
+      }
+
+      window.renderCheckoutPage = renderCheckoutPage;
+
+      // Переключатель B2C / B2B
+      document.querySelectorAll('.buyer-type-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          document.querySelectorAll('.buyer-type-btn').forEach(b => {
+            b.className = 'buyer-type-btn flex items-center justify-center gap-2 py-3 px-4 rounded-lg text-on-surface-variant hover:text-on-surface font-semibold text-[13px] transition-all';
+          });
+          btn.className = 'buyer-type-btn flex items-center justify-center gap-2 py-3 px-4 rounded-lg bg-pure-white text-primary shadow-sm font-bold text-[13px] transition-all';
+          buyerType = btn.dataset.type;
+          document.getElementById('b2b-company-fields').classList.toggle('hidden', buyerType !== 'b2b');
+        });
+      });
+
+      // Выбор доставки (murzik.biz)
+      document.querySelectorAll('.del-card').forEach(card => {
+        card.addEventListener('click', () => {
+          document.querySelectorAll('.del-card').forEach(c => {
+            c.classList.remove('bg-mint-surface', 'ring-2', 'ring-primary');
+            c.classList.add('bg-surface-container-low');
+          });
+          card.classList.remove('bg-surface-container-low');
+          card.classList.add('bg-mint-surface', 'ring-2', 'ring-primary');
+          deliveryMode = card.dataset.mode;
+
+          const moRow = document.getElementById('mo-distance-row');
+          if (moRow) {
+            moRow.classList.toggle('hidden', deliveryMode !== 'mo');
+          }
+          renderCheckoutPage();
+        });
+      });
+
+      // Изменение км от МКАД
+      const kmInput = document.getElementById('co-km');
+      if (kmInput) {
+        kmInput.addEventListener('input', renderCheckoutPage);
+      }
+
+      // Подъём на этаж
+      const liftCheck = document.getElementById('lift-checkbox');
+      if (liftCheck) {
+        liftCheck.addEventListener('change', () => {
+          const details = document.getElementById('lift-details');
+          if (details) details.classList.toggle('hidden', !liftCheck.checked);
+          renderCheckoutPage();
+        });
+      }
+
+      const elevatorSelect = document.getElementById('lift-has-elevator');
+      if (elevatorSelect) {
+        elevatorSelect.addEventListener('change', () => {
+          const floorWrap = document.getElementById('floor-number-wrap');
+          if (floorWrap) floorWrap.classList.toggle('hidden', elevatorSelect.value === 'yes');
+          renderCheckoutPage();
+        });
+      }
+
+      const floorInput = document.getElementById('lift-floor');
+      if (floorInput) {
+        floorInput.addEventListener('input', renderCheckoutPage);
+      }
+
+      // Выбор оплаты
+      document.querySelectorAll('.pay-card').forEach(card => {
+        card.addEventListener('click', () => {
+          document.querySelectorAll('.pay-card').forEach(c => {
+            c.classList.remove('bg-mint-surface', 'ring-2', 'ring-primary');
+            c.classList.add('bg-surface-container-low');
+          });
+          card.classList.remove('bg-surface-container-low');
+          card.classList.add('bg-mint-surface', 'ring-2', 'ring-primary');
+          paymentMethod = card.dataset.pay;
+        });
+      });
+
+      // Промокод
+      document.getElementById('co-promo-btn').addEventListener('click', () => {
+        const val = (document.getElementById('co-promo-input').value || '').trim().toUpperCase();
+        if (val === 'ECOSOFT10' || val === 'MURZIK' || val === 'OPT') {
+          promoMultiplier = 0.9;
+          document.getElementById('co-promo-msg').classList.remove('hidden');
+          window.showToast('Промокод активирован: дополнительная скидка 10%!');
+          renderCheckoutPage();
+        } else {
+          window.showToast('Введите промокод ECOSOFT10 или MURZIK для скидки 10%');
+        }
+      });
+
+      window.submitFullCheckout = function (e) {
+        e.preventDefault();
+        const summary = window.EcoCart.getSummary();
+        if (summary.detailed.length === 0) {
+          window.showToast('Добавьте хотя бы один товар в корзину перед оформлением');
+          return;
+        }
+        const orderNum = 'ECO-' + Math.floor(10000 + Math.random() * 89999);
+        const name = document.getElementById('co-name').value;
+        const phone = document.getElementById('co-phone').value;
+        const grandTotal = document.getElementById('co-grand-total').textContent;
+
+        document.getElementById('modal-order-num').textContent = `Заказ #${orderNum}`;
+        document.getElementById('modal-order-details').innerHTML = `
+          Получатель: <strong>${name}</strong> (${phone})<br/>
+          Статус: <strong>${buyerType === 'b2b' ? 'Юридическое лицо / ИП (Счёт с НДС 20%)' : 'Физическое лицо (Без регистрации)'}</strong><br/>
+          Способ доставки: <strong>${deliveryLabel}</strong> (срок 1–3 рабочих дня)<br/>
+          Способ оплаты: <strong>${paymentMethod}</strong> (накладная и кассовый чек при передаче)<br/>
+          Итоговая сумма: <strong class="text-primary">${grandTotal}</strong> (${summary.totalQty} упак., ${summary.totalWeightKg} кг)
+        `;
+        document.getElementById('co-success-modal').classList.remove('hidden');
+      };
+
+      renderCheckoutPage();
+    });
+  </script>
+</body>
+</html>
