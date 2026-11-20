@@ -495,7 +495,7 @@
                 <div class="flex flex-wrap gap-1.5 mt-2">
                   <a href="https://www.wildberries.ru/seller/44163" target="_blank" rel="noopener" class="px-3 py-1 rounded-full bg-[#CB11AB] text-pure-white text-[11px] font-bold hover:opacity-90 transition-opacity shadow-2xs">Wildberries (WB)</a>
                   <a href="https://www.ozon.ru/seller/ekosoft/" target="_blank" rel="noopener" class="px-3 py-1 rounded-full bg-primary text-pure-white text-[11px] font-bold shadow-2xs">Ozon Магазин</a>
-                  <span class="px-3 py-1 rounded-full bg-mint-subtle text-primary text-[11px] font-bold">Я.Маркет • МВМ • Детский мир</span>
+                  <a href="https://zoozavr.ru/catalog/index/name/cat_fillers/brand/26333/" target="_blank" rel="noopener" class="px-3 py-1 rounded-full bg-[#0073E6] text-pure-white text-[11px] font-bold hover:opacity-90 transition-opacity shadow-2xs">Детский мир (Зоозавр)</a>
                 </div>
               </div>
             </div>

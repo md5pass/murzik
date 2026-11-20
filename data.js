@@ -16,11 +16,12 @@ window.ECOSOFT_DATA = {
     oldSite: 'https://www.murzik.biz/',
     ozonUrl: 'https://www.ozon.ru/seller/ekosoft/',
     wbUrl: 'https://www.wildberries.ru/seller/44163',
+    zoozavrUrl: 'https://zoozavr.ru/catalog/index/name/cat_fillers/brand/26333/',
     marketplaces: [
       { name: 'Wildberries (WB)', url: 'https://www.wildberries.ru/seller/44163', badge: 'Официальный магазин', color: '#CB11AB' },
       { name: 'Ozon (ОЗОН)', url: 'https://www.ozon.ru/seller/ekosoft/', badge: 'Рейтинг 4.8 ★', color: '#005BFF' },
-      { name: 'Яндекс Маркет', url: 'https://market.yandex.ru/', badge: 'Витрина бренда', color: '#E60000' },
-      { name: 'МВМ и Детский мир', url: 'https://www.detmir.ru/', badge: 'Федеральные площадки', color: '#00675c' }
+      { name: 'Детский мир (Зоозавр)', url: 'https://zoozavr.ru/catalog/index/name/cat_fillers/brand/26333/', badge: 'Каталог бренда', color: '#0073E6' },
+      { name: 'Яндекс Маркет и МВМ', url: 'https://market.yandex.ru/', badge: 'Федеральные площадки', color: '#E60000' }
     ]
   },
 
