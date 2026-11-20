@@ -453,7 +453,7 @@
       <footer class="w-full bg-surface-container-low pt-12 pb-8 shadow-[0_1px_8px_rgba(0,0,0,0.04)]">
         <div class="max-w-[1320px] mx-auto px-4 md:px-6 lg:px-8 flex flex-col gap-10">
           <div class="grid grid-cols-1 md:grid-cols-12 gap-8">
-            <!-- Col 1: Brand & Scientific Heritage -->
+            <!-- Col 1: Brand & Heritage -->
             <div class="md:col-span-5 flex flex-col gap-4 pr-0 lg:pr-8">
               <div class="flex items-center gap-3">
                 <div class="w-10 h-10 rounded-xl bg-primary text-pure-white flex items-center justify-center font-bold shadow-xs">
@@ -461,15 +461,15 @@
                 </div>
                 <div>
                   <span class="font-bold text-[18px] text-primary block leading-none">ООО «Экософт»</span>
-                  <span class="text-[12px] text-on-surface-variant">Производство с 1998 г.</span>
+                  <span class="text-[12px] text-on-surface-variant">ИП с 1998 г. (ТМ «Мурзик») • ООО с 2003 г.</span>
                 </div>
               </div>
               <p class="text-[13px] text-on-surface-variant leading-relaxed">
-                140004, Московская обл., г. Люберцы, Октябрьский проспект, д. 411. Первое в России производство силикагелевых, двухкомпонентных минеральных и древесных наполнителей, а также промышленного силикагеля КСКГ/КСМГ по ГОСТ 3956-76.
+                140004, Московская обл., г. Люберцы, Октябрьский проспект, д. 411. Производитель наполнителей под брендами <strong>«Мурзик»</strong> (первый в России силикагель с 1998 г.), <strong>«Найси»</strong>, <strong>«Снежок»</strong> и <strong>«Экософт»</strong> (в белых мешках для маркетплейсов), а также всех видов силикагелей, трепела, диатомита и древесных пеллет 6 мм в крупной фасовке.
               </p>
             </div>
 
-            <!-- Col 2: Разделы сайта (вместо Линеек продукции) -->
+            <!-- Col 2: Разделы сайта -->
             <div class="md:col-span-3 flex flex-col gap-2.5 lg:pl-4">
               <h4 class="font-bold text-[15px] text-on-surface mb-1">Разделы сайта</h4>
               <ul class="flex flex-col gap-1.5 text-[13px] text-on-surface-variant">
@@ -486,14 +486,16 @@
             <!-- Col 3: Контакты производителя -->
             <div class="md:col-span-4 flex flex-col gap-2.5">
               <h4 class="font-bold text-[15px] text-on-surface mb-1">Отдел сбыта и склад</h4>
-              <div class="flex flex-col gap-1.5 text-[13px] text-on-surface-variant">
+              <div class="flex flex-col gap-1 text-[13px] text-on-surface-variant">
                 <a class="font-bold text-[15px] text-on-surface hover:text-primary transition-colors" href="tel:+79775298525">+7 (977) 529-85-25</a>
                 <a class="font-bold text-[15px] text-on-surface hover:text-primary transition-colors" href="tel:+79261160897">+7 (926) 116-08-97</a>
-                <a class="hover:text-primary transition-colors" href="mailto:ekosoft1@yandex.ru">ekosoft1@yandex.ru</a>
-                <p class="text-[12px] text-outline mt-1">ИНН 5027097091 / ОГРН 1035005025648<br/>Самовывоз и отгрузка ТК: Пн–Пт 9:00–18:00</p>
+                <a class="font-bold text-[15px] text-on-surface hover:text-primary transition-colors" href="tel:+79255672880">+7 (925) 567-28-80</a>
+                <a class="hover:text-primary transition-colors font-semibold pt-0.5" href="mailto:ekosoft1@yandex.ru">ekosoft1@yandex.ru • www.murzik.biz</a>
+                <p class="text-[12px] text-outline mt-1">ИНН 5027097091 / ОГРН 1035005025648<br/>Поставки по всей России и странам ЕАС</p>
                 <div class="flex flex-wrap gap-1.5 mt-2">
-                  <a href="https://www.ozon.ru/seller/ekosoft/" target="_blank" rel="noopener" class="px-3 py-1 rounded-full bg-primary text-pure-white text-[11px] font-bold shadow-2xs">Ozon Магазин</a>
                   <a href="https://www.wildberries.ru/seller/44163" target="_blank" rel="noopener" class="px-3 py-1 rounded-full bg-[#CB11AB] text-pure-white text-[11px] font-bold hover:opacity-90 transition-opacity shadow-2xs">Wildberries (WB)</a>
+                  <a href="https://www.ozon.ru/seller/ekosoft/" target="_blank" rel="noopener" class="px-3 py-1 rounded-full bg-primary text-pure-white text-[11px] font-bold shadow-2xs">Ozon Магазин</a>
+                  <span class="px-3 py-1 rounded-full bg-mint-subtle text-primary text-[11px] font-bold">Я.Маркет • МВМ • Детский мир</span>
                 </div>
               </div>
             </div>
