@@ -348,7 +348,7 @@
     headerHost.innerHTML = `
       <!-- Main Sticky Stitch Header -->
       <header class="sticky top-0 z-50 w-full bg-pure-white/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(2,130,117,0.08)]">
-        <div class="max-w-[1360px] mx-auto px-4 sm:px-6 h-20 flex items-center justify-between gap-2 lg:gap-3 xl:gap-4">
+        <div class="max-w-[1360px] mx-auto px-4 sm:px-6 h-16 sm:h-18 flex items-center justify-between gap-2 lg:gap-3 xl:gap-4">
           <!-- Brand Logo -->
           <a class="flex items-center gap-2.5 sm:gap-3 shrink-0 group" href="index.html">
             <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-primary text-pure-white flex items-center justify-center shadow-sm group-hover:bg-primary-container transition-colors shrink-0">
