@@ -339,7 +339,7 @@
     const navLinks = [
       { href: 'index.html', label: 'Главная' },
       { href: 'catalog.html', label: 'Каталог продукции' },
-      { href: 'industrial.html', label: 'Силикагель КСКГ / КСМГ' },
+      { href: 'industrial.html', label: 'Силикагель' },
       { href: 'stm.html', label: 'СТМ / Private Label' },
       { href: 'b2b.html', label: 'Партнёрам B2B' },
       { href: 'about.html', label: 'О производителе' }
@@ -475,7 +475,7 @@
               <ul class="flex flex-col gap-1.5 text-[13px] text-on-surface-variant">
                 <li><a class="hover:text-primary transition-colors" href="index.html">Главная</a></li>
                 <li><a class="hover:text-primary transition-colors" href="catalog.html">Каталог продукции</a></li>
-                <li><a class="hover:text-primary transition-colors" href="industrial.html">Силикагель КСКГ / КСМГ</a></li>
+                <li><a class="hover:text-primary transition-colors" href="industrial.html">Силикагель</a></li>
                 <li><a class="hover:text-primary transition-colors" href="stm.html">СТМ / Private Label</a></li>
                 <li><a class="hover:text-primary transition-colors" href="b2b.html">Партнёрам B2B</a></li>
                 <li><a class="hover:text-primary transition-colors" href="about.html">О производителе</a></li>
