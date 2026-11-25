@@ -241,7 +241,7 @@
                 <span class="material-symbols-outlined text-[18px]">close</span>
               </button>
             </div>
-            <p class="text-[12px] text-on-surface-variant">${item.isBulk ? `Мешок ${item.weightKg} кг` : `${item.volumeL} л (${item.weightKg} кг)`} • ${formatPrice(item.price)}/шт</p>
+            <p class="text-[12px] text-on-surface-variant">${item.isBulk ? `Мешок ${item.weightKg} кг` : (item.volumeL ? `${item.volumeL} л (${item.weightKg} кг)` : `${item.weightKg} кг`)} • ${formatPrice(item.price)}/шт</p>
             <div class="flex items-center justify-between mt-2">
               <div class="inline-flex items-center bg-pure-white rounded-full p-0.5 shadow-xs">
                 <button onclick="window.EcoCart.updateQty('${item.id}', -1)" class="w-6 h-6 rounded-full hover:bg-surface-container flex items-center justify-center text-on-surface font-bold">−</button>
@@ -261,7 +261,7 @@
       document.getElementById('qb-product-id').value = item.id;
       document.getElementById('qb-product-img').src = item.image;
       document.getElementById('qb-product-name').textContent = item.name;
-      document.getElementById('qb-product-price').textContent = `${formatPrice(item.price)} • ${item.isBulk ? item.weightKg + ' кг' : item.volumeL + ' л (' + item.weightKg + ' кг)'}`;
+      document.getElementById('qb-product-price').textContent = `${formatPrice(item.price)} • ${item.isBulk ? item.weightKg + ' кг' : (item.volumeL ? item.volumeL + ' л (' + item.weightKg + ' кг)' : item.weightKg + ' кг')}`;
       modal.classList.remove('hidden');
     },
     closeQuickBuy() {
@@ -620,7 +620,7 @@
                 ${p.brand}
               </span>
               <span class="px-2.5 py-0.5 rounded-full bg-surface-container-low text-on-surface-variant text-[11px] font-semibold border border-outline-variant/30">
-                ${p.volumeL} л • ${p.weightKg} кг
+                ${p.volumeL ? p.volumeL + ' л • ' : ''}${p.weightKg} кг
               </span>
             </div>
             <button onclick="window.toggleFavorite(this, '${p.id}')" aria-label="В избранное" class="w-8 h-8 rounded-full hover:bg-surface-container-low text-outline hover:text-tertiary transition-colors flex items-center justify-center shrink-0" type="button">
@@ -667,7 +667,7 @@
               <span class="text-[23px] font-extrabold text-on-surface tracking-tight">${formatPrice(p.price)}</span>
               ${p.oldPrice ? `<span class="text-[12px] text-outline line-through font-medium">${formatPrice(p.oldPrice)}</span>` : ''}
             </div>
-            <span class="px-2 py-0.5 rounded-md bg-mint-subtle/50 text-primary font-bold text-[11px]">${perLiter} ₽/л</span>
+            <span class="px-2 py-0.5 rounded-md bg-mint-subtle/50 text-primary font-bold text-[11px]">${perLiter} ${p.volumeL ? '₽/л' : '₽/кг'}</span>
           </div>
           <div class="flex gap-2">
             <button onclick="window.EcoCart.add('${p.id}', 1)" class="flex-1 py-2.5 rounded-full bg-primary hover:bg-primary-container text-pure-white text-[13px] font-bold transition-all flex items-center justify-center gap-1.5 shadow-sm active:scale-[0.98]" type="button">
