@@ -11,7 +11,7 @@ window.ECOSOFT_DATA = {
     kpp: '502701001',
     ogrn: '1035005025648',
     address: '140000, Московская область, г. Люберцы, р.п. Малаховка, ш. Быковское, д. 62, пом. 006',
-    phones: ['+7 (977) 529-85-25', '+7 (926) 116-08-97', '+7 (903) 761-73-86'],
+    phones: ['+7 (977) 529-85-25', '+7 (925) 567-28-80', '+7 (926) 116-08-97'],
     emails: ['ekosoft1@yandex.ru'],
     oldSite: 'https://www.murzik.biz/',
     ozonUrl: 'https://www.ozon.ru/seller/ekosoft/',

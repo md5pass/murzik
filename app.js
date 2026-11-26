@@ -488,8 +488,8 @@
               <h4 class="font-bold text-[15px] text-on-surface mb-1">Отдел сбыта и склад</h4>
               <div class="flex flex-col gap-1 text-[13px] text-on-surface-variant">
                 <a class="font-bold text-[15px] text-on-surface hover:text-primary transition-colors" href="tel:+79775298525">+7 (977) 529-85-25</a>
+                <a class="font-bold text-[15px] text-on-surface hover:text-primary transition-colors" href="tel:+79255672880">+7 (925) 567-28-80</a>
                 <a class="font-bold text-[15px] text-on-surface hover:text-primary transition-colors" href="tel:+79261160897">+7 (926) 116-08-97</a>
-                <a class="font-bold text-[15px] text-on-surface hover:text-primary transition-colors" href="tel:+79037617386">+7 (903) 761-73-86</a>
                 <a class="hover:text-primary transition-colors font-semibold pt-0.5" href="mailto:ekosoft1@yandex.ru">ekosoft1@yandex.ru • www.murzik.biz</a>
                 <p class="text-[12px] text-outline mt-1">ИНН 5027097091 / ОГРН 1035005025648<br/>Поставки по всей России и странам ЕАС</p>
                 <div class="flex flex-wrap gap-1.5 mt-2">
