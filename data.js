@@ -1385,10 +1385,8 @@ window.ECOSOFT_DATA = {
       weightKg: 0.4,
       price: 77,
       oldPrice: 99,
-      image: 'image/granules_naicy_rodents.png',
-      gallery: [
-        'image/granules_naicy_rodents.png'
-      ],
+      image: '',
+      gallery: [],
       badge: '1 сорт • 400 г',
       badgeType: 'emerald',
       rating: 4.8,
@@ -1417,10 +1415,8 @@ window.ECOSOFT_DATA = {
       weightKg: 0.8,
       price: 110,
       oldPrice: 140,
-      image: 'image/granules_naicy_rodents.png',
-      gallery: [
-        'image/granules_naicy_rodents.png'
-      ],
+      image: '',
+      gallery: [],
       badge: 'Отборное • 800 г',
       badgeType: 'emerald',
       rating: 4.9,
