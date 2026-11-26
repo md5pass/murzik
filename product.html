@@ -412,8 +412,17 @@
         currentProduct = p;
         document.title = `${p.name} — Производитель кошачьих наполнителей ООО «Экософт»`;
         document.getElementById('pd-badge').textContent = p.badge || p.brand;
-        document.getElementById('pd-main-img').src = p.image;
-        document.getElementById('pd-main-img').alt = p.name;
+        const mainImgEl = document.getElementById('pd-main-img');
+        const thumbsEl = document.getElementById('pd-thumbs');
+        if (p.image) {
+          mainImgEl.src = p.image;
+          mainImgEl.alt = p.name;
+          mainImgEl.classList.remove('hidden');
+        } else {
+          mainImgEl.classList.add('hidden');
+          mainImgEl.insertAdjacentHTML('afterend', `<div id="pd-text-only-info" class="p-8 text-center flex flex-col items-center gap-3"><span class="material-symbols-outlined text-[48px] text-primary">description</span><p class="text-[15px] text-on-surface leading-relaxed max-w-md">${p.fullDesc || p.shortDesc}</p></div>`);
+          if (thumbsEl) thumbsEl.classList.add('hidden');
+        }
         document.getElementById('pd-subtitle-pill').textContent = p.subtitle || p.shortDesc;
         document.getElementById('pd-brand-chip').textContent = `Бренд: ${p.brand} (Производитель «Экософт»)`;
         document.getElementById('pd-sku').textContent = `Арт: ${p.sku}`;

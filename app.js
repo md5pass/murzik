@@ -232,7 +232,7 @@
       container.innerHTML = summary.detailed.map(item => `
         <div class="flex gap-3 p-3 rounded-xl bg-mint-surface/60 hover:bg-mint-surface transition-colors">
           <a href="product.html?id=${item.id}" class="w-16 h-16 rounded-lg bg-pure-white p-1.5 flex items-center justify-center shrink-0">
-            <img src="${item.image}" alt="${item.name}" class="max-h-full max-w-full object-contain"/>
+            ${item.image ? `<img src="${item.image}" alt="${item.name}" class="max-h-full max-w-full object-contain"/>` : `<span class="material-symbols-outlined text-primary text-[28px]">inventory_2</span>`}
           </a>
           <div class="flex-1 min-w-0">
             <div class="flex items-start justify-between gap-2">
@@ -259,7 +259,13 @@
       const modal = document.getElementById('eco-quickbuy-modal');
       if (!modal || !item) return;
       document.getElementById('qb-product-id').value = item.id;
-      document.getElementById('qb-product-img').src = item.image;
+      const qbImg = document.getElementById('qb-product-img');
+      if (item.image) {
+        qbImg.src = item.image;
+        qbImg.classList.remove('hidden');
+      } else {
+        qbImg.classList.add('hidden');
+      }
       document.getElementById('qb-product-name').textContent = item.name;
       document.getElementById('qb-product-price').textContent = `${formatPrice(item.price)} • ${item.isBulk ? item.weightKg + ' кг' : (item.volumeL ? item.volumeL + ' л (' + item.weightKg + ' кг)' : item.weightKg + ' кг')}`;
       modal.classList.remove('hidden');
@@ -628,10 +634,17 @@
             </button>
           </div>
 
-          <!-- Product Packaging Image Viewport (Единый чистый скандинавский студийный фон как у 4 брендов, упаковка не меняется) -->
+          <!-- Product Packaging Image Viewport (или текстовая информация о товаре без фото) -->
+          ${p.image ? `
           <a href="product.html?id=${p.id}" class="w-full h-56 flex items-center justify-center p-3.5 bg-gradient-to-b from-[#eaf6f2] via-[#f7fcfb] to-[#e2f3ee] rounded-2xl border border-mint-subtle/70 group-hover:border-primary/40 group-hover:shadow-md transition-all duration-300 block relative overflow-hidden">
             <img alt="${p.name}" class="max-h-full max-w-full object-contain mix-blend-multiply drop-shadow-[0_10px_14px_rgba(0,80,70,0.18)] group-hover:scale-105 transition-transform duration-300 mx-auto block" src="${p.image}" loading="lazy"/>
           </a>
+          ` : `
+          <a href="product.html?id=${p.id}" class="w-full h-56 flex flex-col justify-center p-5 bg-gradient-to-br from-[#eaf6f2] via-[#f7fcfb] to-[#e2f3ee] rounded-2xl border border-mint-subtle/70 group-hover:border-primary/40 group-hover:shadow-md transition-all duration-300 relative overflow-hidden">
+            <span class="text-[11px] font-bold uppercase tracking-wider text-primary mb-2">${p.categoryLabel}</span>
+            <p class="text-[13px] text-on-surface leading-relaxed line-clamp-5">${p.fullDesc || p.shortDesc}</p>
+          </a>
+          `}
 
           <!-- Rating & SKU Bar -->
           <div class="flex items-center justify-between gap-1.5 mt-3.5 text-[12px]">

@@ -1252,12 +1252,8 @@ window.ECOSOFT_DATA = {
       weightKg: 8.5,
       price: 400,
       oldPrice: 490,
-      image: 'image/eko-komf-1.jpg',
-      gallery: [
-        'image/eko-komf-1.jpg',
-        'image/granules_ecosoft_comfort.jpg',
-        'image/granules_ecosoft_comfort_cats.jpg'
-      ],
+      image: '',
+      gallery: [],
       badge: 'Мешок 20 л • 2 сорбента',
       badgeType: 'teal',
       rating: 4.8,

@@ -638,7 +638,7 @@
           listEl.innerHTML = summary.detailed.map(item => `
             <div class="flex gap-3 p-3 rounded-xl bg-surface-container-low items-center">
               <a href="product.html?id=${item.id}" class="w-14 h-14 bg-pure-white rounded-lg p-1 flex items-center justify-center shrink-0">
-                <img src="${item.image}" alt="${item.name}" class="max-h-full max-w-full object-contain"/>
+                ${item.image ? `<img src="${item.image}" alt="${item.name}" class="max-h-full max-w-full object-contain"/>` : `<span class="material-symbols-outlined text-primary text-[24px]">inventory_2</span>`}
               </a>
               <div class="flex-1 min-w-0">
                 <a href="product.html?id=${item.id}" class="font-bold text-[13px] text-on-surface hover:text-primary truncate block">${item.name}</a>
