@@ -467,7 +467,6 @@
                 </div>
                 <div>
                   <span class="font-bold text-[18px] text-primary block leading-none">ООО «Экософт»</span>
-                  <span class="text-[12px] text-on-surface-variant">ИП с 1998 г. (ТМ «Мурзик») • ООО с 2003 г.</span>
                 </div>
               </div>
               <p class="text-[13px] text-on-surface-variant leading-relaxed">
